@@ -14,6 +14,7 @@ import avatar1 from "./assets/avatar1.png";
 import avatar2 from "./assets/avatar2.png";
 import avatar3 from "./assets/avatar3.png";
 import TCDLOGO from "./assets/tcd-custom-logo.png";
+import { motion } from "framer-motion";
 
 const blogs = [
   {
@@ -49,38 +50,62 @@ const blogs = [
 const BlogSection = () => {
   return (
     <>
-      <Container className="my-5">
-        <div className="text-center mb-4">
+      <Container className="">
+        <motion.div
+          className="text-center mb-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          {/* <div className="text-center mb-4"> */}
           <h2>
-            <strong>Our</strong> <span className="text-custom-success">Blogs</span>
+            <strong>Our</strong>{" "}
+            <span className="text-custom-success">Blogs</span>
           </h2>
           <p>
             Health blogs that keep you informed about good <br></br>health
             practices and achieve your goals.
           </p>
-        </div>
+          {/* </div> */}
+        </motion.div>
         <Row>
           {blogs.map((blog, index) => (
             <Col key={index} md={3}>
-              <Card className="blog-card">
-                <Card.Img
-                  variant="top"
-                  src={blog.image}
-                  className="blog-image"
-                />
-                <Card.Body>
-                  <span className="badge blog-badge">{blog.title}</span>
-                  <Card.Text className="blog-description">
-                    {blog.description}
-                  </Card.Text>
-                  <p className="blog-doctor">{blog.doctor}</p>
-                </Card.Body>
-              </Card>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
+                <Card className="blog-card">
+                  <Card.Img
+                    variant="top"
+                    src={blog.image}
+                    className="blog-image"
+                  />
+                  <Card.Body>
+                    <span className="badge blog-badge">{blog.title}</span>
+                    <Card.Text className="blog-description">
+                      {blog.description}
+                    </Card.Text>
+                    <p className="blog-doctor">{blog.doctor}</p>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </Col>
           ))}
         </Row>
       </Container>
-      <section className="app-download-section py-2 container">
+
+      <motion.div
+         className="app-download-section py-2 container"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+      {/* <section className="app-download-section py-2 container"> */}
         <Container>
           <Row className="align-items-center">
             {/* Left Side - Text Content */}
@@ -103,8 +128,16 @@ const BlogSection = () => {
               </div>
             </Col>
             <Col lg={2} className="text-center position-relative">
-            <img src={TCDLOGO} alt="tcd logo" style={{width:"203px", height:"204.47px", marginLeft:"28rem"}}/>
-      </Col>
+              <img
+                src={TCDLOGO}
+                alt="tcd logo"
+                style={{
+                  width: "203px",
+                  height: "204.47px",
+                  marginLeft: "28rem",
+                }}
+              />
+            </Col>
             {/* Right Side - Mobile Mockup */}
             <Col lg={5} className="text-center position-relative">
               <img
@@ -120,8 +153,19 @@ const BlogSection = () => {
             </Col>
           </Row>
         </Container>
-      </section>
-      <section className="text-center py-5 mb-6">
+        </motion.div>
+      {/* </section> */}
+
+
+      <motion.div
+        className="text-center py-6"
+        style={{marginTop:"6rem", marginBottom:"6rem"}}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+      {/* <section className="text-center py-5 mb-6"> */}
         <h2 className="fw-bold">
           Need <span className="text-custom-success">Help?</span>
         </h2>
@@ -161,7 +205,8 @@ const BlogSection = () => {
         <Button className="mt-4  rounded-pill shadow-sm btn-custom-success border p-3">
           Contact Now
         </Button>
-      </section>
+        </motion.div>
+      {/* </section> */}
 
       <footer className="footer">
         {/* Wavy SVG Border */}
@@ -173,10 +218,6 @@ const BlogSection = () => {
             ></path>
           </svg>
         </div>
-        {/* <div className="ocean">
-  {/* <div className="wave"></div> */}
-        {/* <div className="wave"></div>
-</div> */}
 
         {/* Footer Content */}
         <div className="footer-content py-5 px-3 text-light">

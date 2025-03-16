@@ -1,4 +1,12 @@
 /* Hero section */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
 
 .text-custom-success {
   color: #6ec207 !important;
@@ -70,6 +78,7 @@ body {
   background-color: #1a5632;
   border-radius: 30px;
   position: relative;
+  margin-top: 4rem;
 }
 
 .bg-leaf {
@@ -89,17 +98,23 @@ body {
 }
 
 .circular-text {
-  width: 347px;
-  height: 349.51px;
+  width: 318px;
+  height: 262.51px;
   position: relative;
   animation: spin 10s linear infinite;
-  color: #2d722a;
+  background: transparent !important; /* ✅ Forces transparency */
 }
 
 .circular-text svg {
   width: 100%;
   height: 100%;
+  background: transparent; /* ✅ Ensures SVG background is transparent */
 }
+
+.circular-text textPath {
+  fill: #2D722A; /* ✅ Apply green text color */
+}
+
 
 @keyframes spin {
   from {
@@ -187,6 +202,7 @@ body {
 .partner-rewards {
   max-width: 1200px;
   margin: auto;
+  margin-top: 6rem;
 }
 
 .rewards-img {
@@ -227,11 +243,15 @@ body {
 }
 
 /* blog section */
+/* Blog Section */
 .blog-card {
   border-radius: 12px;
   border: 2px solid #72c046;
   overflow: hidden;
   transition: transform 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .blog-card:hover {
@@ -239,32 +259,40 @@ body {
 }
 
 .blog-image {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 200px;
+  border-radius: 12px;
+  width: 100%;
+  height: 350px; /* Increased Height */
   object-fit: cover;
 }
 
+/* Positioning badge over image */
 .blog-badge {
   background-color: white;
   color: black !important;
   font-size: 14px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 20px;
-  display: inline-block;
-  margin-bottom: 8px;
+  position: absolute;
+  bottom: 196px;
+  left: 32%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .blog-description {
   font-size: 14px;
   color: #555;
+  margin-top: 15px;
 }
 
 .blog-doctor {
   font-weight: bold;
   color: #117554;
   margin-top: 10px;
+  text-align: left;
 }
+
 
 /* app- download section */
 
@@ -274,6 +302,7 @@ body {
   padding-right: 4.5rem !important;
   padding-left: 4.5rem !important;
   position: relative;
+  margin-top: 8rem;
 }
 
 .text-warning {

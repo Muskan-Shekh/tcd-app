@@ -10,14 +10,16 @@ import { FaLock, FaArrowRight } from "react-icons/fa";
 import AboutSection from "./aboutSection.js";
 import Expertise from "./experties.js";
 import BlogSection from "./blogSection.js";
+import { Parallax } from "react-parallax";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="bg-custom-dark text-white px-4 py-3 d-flex justify-content-between align-items-center rounded-bottom-5">
+    <header className="sticky-header bg-custom-dark text-white px-4 d-flex justify-content-between align-items-center rounded-bottom-5">
       <div className="h4 fw-bold d-flex align-items-center">
         <svg
-          width="93"
-          height="59"
+          width="91"
+          height="58"
           viewBox="0 0 93 59"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +48,26 @@ const Header = () => {
           />
         </svg>
       </div>
-      <nav className="d-none d-md-flex gap-5">
+      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "16rem" }}>
         <a href="/" className="text-custom-success text-decoration-none">
           Home
         </a>
         <a href="/" className="text-white text-decoration-none">
-          Our Meals
+          Our Meals{" "}
+          <svg
+            width="14"
+            height="8"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 1L7.24266 6.75734C7.10864 6.89136 6.89136 6.89136 6.75734 6.75734L1 0.999999"
+              stroke="#78E209"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
         </a>
         <a href="/" className="text-white text-decoration-none">
           About Us
@@ -71,9 +87,17 @@ const Header = () => {
 const HeroSection = () => {
   return (
     <>
-      <section className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-5">
+      <motion.div
+        className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5"
+        style={{ width: "1518px", height: "659px", marginTop: "4rem" }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        {/* <section className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5" style={{width:"1518px", height:"659px", marginTop:"4rem"}}> */}
         <div className="col-md-5">
-          <h1 className="display-4 fw-bold">
+          <h1 className="display-4 fw-bold" style={{ fontFamily: "PT Serif" }}>
             Customizable <span className="text-custom-success">Healthy</span>{" "}
             Meals Delivered to <span className="text-custom-success">You!</span>
           </h1>
@@ -109,7 +133,7 @@ const HeroSection = () => {
             src={fitnessImage}
             alt="Fitness models"
             className="img-fluid position-relative fitness-img"
-            style={{ width: "508.38px", height: "564px", zIndex: "1" }}
+            style={{ width: "508.38px", height: "500px", zIndex: "1" }}
           />
 
           <div className="position-relative dish-wrapper">
@@ -133,7 +157,9 @@ const HeroSection = () => {
         </div>
 
         <NearbyDelivery></NearbyDelivery>
-      </section>
+      </motion.div>
+      {/* </section> */}
+
       <AboutSection></AboutSection>
       <Expertise></Expertise>
       <BlogSection></BlogSection>
@@ -143,7 +169,14 @@ const HeroSection = () => {
 
 const NearbyDelivery = () => {
   return (
-    <div className="col-md-2 d-flex flex-column align-items-start bg-white p-3 rounded shadow-sm">
+    <motion.div
+      className="col-md-2 d-flex flex-column align-items-start bg-white p-3 rounded shadow-sm"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      {/* <div className="col-md-2 d-flex flex-column align-items-start bg-white p-3 rounded shadow-sm"> */}
       <div className="d-flex align-items-center mb-2">
         <FaLock className="fs-4 text-loc-color me-2" />
         <div>
@@ -174,7 +207,8 @@ const NearbyDelivery = () => {
         />
         <FaArrowRight className="ms-2 text-dark fs-5" />
       </div>
-    </div>
+    </motion.div>
+    // {/* </div> */}
   );
 };
 
