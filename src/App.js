@@ -97,7 +97,7 @@ const HeroSection = () => {
       >
         {/* <section className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5" style={{width:"1518px", height:"659px", marginTop:"4rem"}}> */}
         <div className="col-md-5">
-          <h1 className="display-4 fw-bold" style={{ fontFamily: "PT Serif" }}>
+          <h1 className="display-4 fw-bold heading">
             Customizable <span className="text-custom-success">Healthy</span>{" "}
             Meals Delivered to <span className="text-custom-success">You!</span>
           </h1>

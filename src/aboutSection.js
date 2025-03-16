@@ -29,7 +29,7 @@ const AboutSection = () => {
         {/* Content */}
         <div className="container d-flex flex-row p-4">
           <div>
-            <h2 className="fw-bold">
+            <h2 className="fw-bold heading">
               About <span className="text-custom-success">TCD</span>
             </h2>
             <p className="lead">
@@ -114,7 +114,7 @@ const AboutSection = () => {
         <div className="row align-items-center">
           {/* Left Side Text */}
           <div className="col-md-6">
-            <h2 className="fw-bold">
+            <h2 className="fw-bold heading">
               Our <span className="text-custom-success">Mission</span>
             </h2>
             <p className="text-muted">

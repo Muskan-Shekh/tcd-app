@@ -24,11 +24,15 @@
   color: #117554;
   font-weight: 600; /* Semi-bold */
   font-size: 24px;
+  font-family: "Poppins"
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
-
+.heading{
+  font-family: "PT Serif" ;
+  font-size: 50px;
+}
 .dish-wrapper {
   position: absolute;
   width: 100px;
@@ -83,7 +87,7 @@ body {
 
 .bg-leaf {
   width: 99.87px;
-  top: 48%;
+  top: 65%;
   left: 30%;
   opacity: 1.2;
   height: 111.19px;

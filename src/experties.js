@@ -61,13 +61,13 @@ const Expertise = () => {
 
         {/* Content */}
         <div className="content-container d-flex flex-row">
-          <div className="" style={{ paddingTop: "4rem" }}>
-            <h2 className="fw-bold">
+          <div className="" style={{ paddingTop: "8rem" }}>
+            <h2 className="fw-bold heading">
               Expertise in <br></br>providing{" "}
               <span className="text-custom-success">diet for</span>
             </h2>
             <p className="text-light">
-              TCD is focused on providing wholesome nutritious meals for a
+              TCD is focused on providing wholesome nutritious <br></br> meals for a
               healthy lifestyle.
             </p>
             <button className="btn btn-custom-success text-white rounded-pill p-3">
@@ -76,7 +76,7 @@ const Expertise = () => {
           </div>
           {/* Health Categories */}
           {/* Health Categories with PNG Icons */}
-          <div className="health-grid">
+          <div className="health-grid" style={{padding:"4rem"}}>
             {healthItems.map((item, index) => (
               <div className="health-item" key={index}>
                 <div className="icon-circle">
@@ -105,7 +105,7 @@ const Expertise = () => {
         <div className="row align-items-center">
           {/* Left Side - Text Content */}
           <div className="col-md-6">
-            <h2 className="fw-bold">
+            <h2 className="fw-bold" style={{fontFamily:"PT Serif", fontSize:"35px"}}>
               Become a Partner &{" "}
               <span className="text-custom-success">Earn</span> Rewards
             </h2>
@@ -141,6 +141,7 @@ const Expertise = () => {
       </motion.div>
       {/* </section> */}
 
+       <div style={{backgroundColor:"#F8F9F8"}}>
       <motion.div
         className="why-choose-tcd container py-5"
         initial={{ opacity: 0, y: 50 }}
@@ -153,9 +154,9 @@ const Expertise = () => {
           {/* Left Content */}
           <div className="col-md-7 d-flex flex-row">
             <div>
-              <h2 className="fw-bold">
-                Why Choose TCD as a Lifetime{" "}
-                <span className="text-custom-success">Fitness</span> Partner?
+              <h2 className="fw-bold heading">
+                Why Choose TCD as a <br></br>Lifetime 
+                <span className="text-custom-success"> Fitness</span> Partner?
               </h2>
               <ul className="list-unstyled mt-4">
                 {features.map((feature, index) => (
@@ -208,6 +209,7 @@ const Expertise = () => {
         </div>
       </motion.div>
       {/* </section> */}
+      </div>
     </>
   );
 };
