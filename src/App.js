@@ -63,7 +63,7 @@ const Header = () => {
           Contact Us
         </a>
       </nav>
-      <button className="btn btn-light rounded-pill" onClick={alert("Welcome to my site!")}>Get the App</button>
+      <button className="btn btn-light rounded-pill">Get the App</button>
     </header>
   );
 };
