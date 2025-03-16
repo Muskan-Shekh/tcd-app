@@ -262,16 +262,17 @@ body {
 
 .blog-doctor {
   font-weight: bold;
-  color: #158a12;
+  color: #117554;
   margin-top: 10px;
 }
 
 /* app- download section */
 
 .app-download-section {
-  background-color: #1b5e20;
+  background-color: #1A5632;
   border-radius: 20px;
-  padding: 50px;
+  padding-right: 4.5rem !important;
+  padding-left: 4.5rem !important;
   position: relative;
 }
 
@@ -290,7 +291,7 @@ body {
   height: 350px !important;
   position: relative;
   z-index: 2;
-  right: -621px;
+  right: -480px;
 }
 
 @media (max-width: 768px) {
