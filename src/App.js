@@ -47,23 +47,23 @@ const Header = () => {
         </svg>
       </div>
       <nav className="d-none d-md-flex gap-5">
-        <a href="#" className="text-custom-success text-decoration-none">
+        <a href="/" className="text-custom-success text-decoration-none">
           Home
         </a>
-        <a href="#" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none">
           Our Meals
         </a>
-        <a href="#" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none">
           About Us
         </a>
-        <a href="#" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none">
           Blogs
         </a>
-        <a href="#" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none">
           Contact Us
         </a>
       </nav>
-      <button className="btn btn-light rounded-pill">Get the App</button>
+      <button className="btn btn-light rounded-pill" onClick={alert("Welcome to my site!")}>Get the App</button>
     </header>
   );
 };
