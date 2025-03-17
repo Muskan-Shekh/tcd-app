@@ -2,16 +2,16 @@ import React from "react";
 import dishImage from "./assets/foodPlate.svg"; // Replace with actual dish image path
 import backgroundImage from "./assets/bgImage.png";
 // Import icons
-import preWorkoutIcon from "./assets/icon8.png";
-import diabetesIcon from "./assets/icon7.png";
-import pcosIcon from "./assets/icon6.png";
-import kidneyIcon from "./assets/icon5.png";
-import thyroidIcon from "./assets/icon4.png";
-import heartIcon from "./assets/icon3.png";
-import weightIcon from "./assets/icon2.png";
-import detoxIcon from "./assets/icon1.png";
+import preWorkoutIcon from "./assets/icon1.svg";
+import diabetesIcon from "./assets/icon2.svg";
+import pcosIcon from "./assets/icon5.svg";
+import kidneyIcon from "./assets/icon7.svg";
+import thyroidIcon from "./assets/icon2.svg";
+import heartIcon from "./assets/icon4.svg";
+import weightIcon from "./assets/icon6.svg";
+import detoxIcon from "./assets/icon8.svg";
 
-import rewardsImage from "./assets/partnerImage.png";
+import rewardsImage from "./assets/partnerImage.svg";
 import mealPlan from "./assets/foodImage.png";
 import TCDLOGO from "./assets/tcd-custom-logo.png";
 

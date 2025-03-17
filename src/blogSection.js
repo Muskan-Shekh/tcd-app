@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import heart from "./assets/heart.png";
-import weight from "./assets/weight.png";
-import kidney from "./assets/kidney.png";
-import diabeties from "./assets/diabeties.png";
+import heart from "./assets/heart.svg";
+import weight from "./assets/weight.svg";
+import kidney from "./assets/kidney.svg";
+import diabeties from "./assets/diabeties.svg";
 
 import mobileMockup from "./assets/mobile.png";
 import mobileMockup1 from "./assets/mobile2.png";
@@ -34,14 +34,14 @@ const blogs = [
     title: "Kidney & Liver Health",
     image: kidney,
     description:
-      "The liver and kidneys are vital organs responsible for filtering the blood, maintaining...",
+      "The liver and kidneys are vital organs responsible filtering the blood, maintaining...",
     doctor: "Dr. Sanjay Kapoor",
   },
   {
     title: "Diabetes",
     image: diabeties,
     description:
-      "Chronic metabolic disorder characterized by persistently high blood glucose (or blood sugar)...",
+      "Chronic metabolic disorder characterized by persistently blood glucose (or blood sugar)...",
     doctor: "Dr. Kunal Sharma",
   },
 ];
@@ -78,14 +78,15 @@ const BlogSection = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <Card className="blog-card">
-                  <Card.Img
+                <Card className="blog-card border-0">
+                  <div className="position-relative"><Card.Img
                     variant="top"
                     src={blog.image}
-                    className="blog-image"
                   />
-                  <Card.Body>
-                    <span className="badge blog-badge">{blog.title}</span>
+                    <span className="badge blog-badge">{blog.title}</span></div>
+                  
+
+                  <Card.Body className="p-0">
                     <Card.Text className="blog-description">
                       {blog.description}
                     </Card.Text>

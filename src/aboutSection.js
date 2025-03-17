@@ -1,7 +1,7 @@
 import React from "react";
 import bgLeaf1 from "./assets/bgLeaf1.png";
 import bgLeaf2 from "./assets/bgLeaf2.png";
-import missionImage from "./assets/missionImage.png";
+import missionImage from "./assets/missionImage.svg";
 import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
@@ -82,6 +82,7 @@ const AboutSection = () => {
                 viewBox="0 0 176 142"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                style={{padding:"14px"}}
               >
                 <path
                   d="M104.271 10.0774C113.89 14.1999 116.111 24.5033 115.5 30C105.881 24.5033 101.37 15.8794 99.2323 12.3677C100.606 17.4063 107.019 26.2343 111.142 28.8578C116.18 32.0642 118.013 33.4384 118.471 34.8125C118.837 35.9119 118.318 35.8813 118.013 35.7286C116.638 33.8964 115.814 33.0719 112.516 31.6061C98.7742 29.3158 97.4 18.7805 96.0259 13.7418C94.9265 9.71093 95.2624 3.51187 95.5678 1.37427C95.8732 2.59576 98.4078 6.77936 104.271 10.0774Z"

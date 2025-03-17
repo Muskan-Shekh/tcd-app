@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css"; // Ensure this is correctly linked
-import fitnessImage from "./assets/image51.png";
-import logo1 from "./assets/logo1.png";
-import logo2 from "./assets/logo2.png";
-import logo3 from "./assets/logo3.png";
+import fitnessImage from "./assets/fitness.svg";
+import logo1 from "./assets/logo1.svg";
+import logo2 from "./assets/logo2.svg";
+import logo3 from "./assets/logo3.svg";
 import dishImage from "./assets/foodPlate.svg";
 import calorieGraph from "./assets/calorieGraph.png";
 import AboutSection from "./aboutSection.js";
@@ -12,7 +12,7 @@ import BlogSection from "./blogSection.js";
 import { motion } from "framer-motion";
 import arrow from "./assets/arrow.svg";
 import bag from "./assets/bag.svg";
-import fitnessBg from "./assets/Group 8448.svg";
+import fitnessBg from "./assets/fitnessBg.svg";
 
 const Header = () => {
   return (
@@ -27,6 +27,7 @@ const Header = () => {
           viewBox="0 0 93 59"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          style={{padding:"6px"}}
         >
           <path
             d="M54.9722 5.37769C60.1053 7.57762 61.2904 13.0759 60.9645 16.0091C55.8313 13.0759 53.4241 8.47389 52.2834 6.59988C53.0167 9.28868 56.4388 13.9996 58.6387 15.3996C61.3275 17.1107 62.3053 17.844 62.5497 18.5773C62.7453 19.1639 62.4682 19.1476 62.3053 19.0661C61.572 18.0884 61.132 17.6484 59.372 16.8662C52.0389 15.644 51.3056 10.022 50.5723 7.33319C49.9857 5.18214 50.1649 1.8741 50.3279 0.733398C50.4908 1.38523 51.8434 3.61775 54.9722 5.37769Z"
@@ -52,7 +53,7 @@ const Header = () => {
           />
         </svg>
       </div>
-      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "18rem" }}>
+      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "25rem" }}>
         <a href="/" className="text-custom-success text-decoration-none">
           Home
         </a>
