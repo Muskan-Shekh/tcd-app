@@ -15,17 +15,30 @@ const AboutSection = () => {
       >
         {/* <section className="about-section position-relative p-5 text-white container"> */}
         {/* Background Elements */}
-        <img
-          src={bgLeaf1}
-          alt="Leaf Background"
-          className="position-absolute bg-leaf"
-        />
-        <img
-          src={bgLeaf2}
-          alt="Leaf Background"
-          className="position-absolute bg-leaf2"
-        />
-
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={bgLeaf1}
+            alt="Leaf Background"
+            className="position-absolute bg-leaf"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={bgLeaf2}
+            alt="Leaf Background"
+            className="position-absolute bg-leaf2"
+          />
+        </motion.div>
         {/* Content */}
         <div className="container d-flex flex-row p-4">
           <div>
@@ -34,17 +47,17 @@ const AboutSection = () => {
             </h2>
             <p className="lead">
               The Correct Diet (TCD) provides customized, freshly cooked daily
-              meals and ready-to-eat healthy food and drinks. We deliver to
-              nearby gyms, supporting individuals in achieving their fitness
-              goals and managing various medical conditions through proper
-              nutrition.
+              meals and <br></br> ready-to-eat healthy food and drinks. We
+              deliver to nearby gyms, supporting<br></br> individuals in
+              achieving their fitness goals and managing various medical{" "}
+              <br></br> conditions through proper nutrition.
             </p>
-            <button className="btn btn-custom-success text-white rounded-pill px-4 py-2">
+            <button className="btn btn-custom-success text-white rounded-pill px-4">
               Read More
             </button>
           </div>
           {/* Rotating Circular Logo */}
-          <div className="position-relative">
+          <div className="position-relative" style={{ marginLeft: "13rem" }}>
             <div className="circular-text">
               <svg viewBox="0 0 200 200">
                 <path
@@ -64,9 +77,9 @@ const AboutSection = () => {
             </div>
             <div className="position-absolute top-50 start-50 translate-middle">
               <svg
-                width="170"
-                height="140"
-                viewBox="0 0 170 140"
+                width="176"
+                height="142"
+                viewBox="0 0 176 142"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -104,7 +117,8 @@ const AboutSection = () => {
       {/* </section> */}
 
       <motion.div
-        className="container my-5"
+        className="container my-9"
+        style={{marginTop:"4.5rem",marginBottom:"4.5rem"}}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -117,10 +131,10 @@ const AboutSection = () => {
             <h2 className="fw-bold heading">
               Our <span className="text-custom-success">Mission</span>
             </h2>
-            <p className="text-muted">
-              To promote a preventive and sustainable approach to nutrition and
-              wellness, ensuring a healthier and longer life for all
-              individuals.
+            <p className="text-muted para1">
+              To promote a preventive and sustainable approach to <br></br>{" "}
+              nutrition and wellness, ensuring a healthier and longer life{" "}
+              <br></br> for all individuals.
             </p>
           </div>
 
@@ -130,7 +144,7 @@ const AboutSection = () => {
               src={missionImage}
               alt="Mission"
               className="img-fluid"
-              style={{ width: "548.92px", height: "439.21px" }}
+              style={{ width: "400px"}}
             />
           </div>
         </div>

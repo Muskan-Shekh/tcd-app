@@ -4,19 +4,23 @@ import fitnessImage from "./assets/image51.png";
 import logo1 from "./assets/logo1.png";
 import logo2 from "./assets/logo2.png";
 import logo3 from "./assets/logo3.png";
-import dishImage from "./assets/dishImage.png";
+import dishImage from "./assets/foodPlate.svg";
 import calorieGraph from "./assets/calorieGraph.png";
-import { FaLock, FaArrowRight } from "react-icons/fa";
 import AboutSection from "./aboutSection.js";
 import Expertise from "./experties.js";
 import BlogSection from "./blogSection.js";
-import { Parallax } from "react-parallax";
 import { motion } from "framer-motion";
+import arrow from "./assets/arrow.svg";
+import bag from "./assets/bag.svg";
+import fitnessBg from "./assets/Group 8448.svg";
 
 const Header = () => {
   return (
     <header className="sticky-header bg-custom-dark text-white px-4 d-flex justify-content-between align-items-center rounded-bottom-5">
-      <div className="h4 fw-bold d-flex align-items-center">
+      <div
+        className="h4 fw-bold d-flex align-items-center"
+        style={{ marginLeft: "3rem" }}
+      >
         <svg
           width="91"
           height="58"
@@ -48,7 +52,7 @@ const Header = () => {
           />
         </svg>
       </div>
-      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "16rem" }}>
+      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "18rem" }}>
         <a href="/" className="text-custom-success text-decoration-none">
           Home
         </a>
@@ -64,8 +68,8 @@ const Header = () => {
             <path
               d="M13 1L7.24266 6.75734C7.10864 6.89136 6.89136 6.89136 6.75734 6.75734L1 0.999999"
               stroke="#78E209"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </svg>
         </a>
@@ -79,7 +83,12 @@ const Header = () => {
           Contact Us
         </a>
       </nav>
-      <button className="btn btn-light rounded-pill">Get the App</button>
+      <button
+        className="btn btn-light rounded-pill px-4"
+        style={{ marginRight: "3rem", height:"50px" }}
+      >
+        Get the App
+      </button>
     </header>
   );
 };
@@ -98,17 +107,18 @@ const HeroSection = () => {
         {/* <section className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5" style={{width:"1518px", height:"659px", marginTop:"4rem"}}> */}
         <div className="col-md-5">
           <h1 className="display-4 fw-bold heading">
-            Customizable <span className="text-custom-success">Healthy</span>{" "}
-            Meals Delivered to <span className="text-custom-success">You!</span>
+            Customizable <br></br>{" "}
+            <span className="text-custom-success">Healthy</span> Meals Delivered
+            to <span className="text-custom-success">You!</span>
           </h1>
           <p className="text-custom-muted mt-3">
-            No packed food with preservatives is better than a daily freshly
-            cooked meal by TCD.
+            No packed food with preservatives is better <br></br> than a daily
+            freshly cooked meal by TCD.
           </p>
         </div>
         <div className="position-relative col-md-5 text-center">
           {/* Background Image */}
-          <svg
+          {/* <svg
             width="510"
             height="564"
             viewBox="0 0 510 564"
@@ -122,23 +132,40 @@ const HeroSection = () => {
               cy="255.513"
               r="222.5"
               stroke="#D4E9BE"
-              stroke-width="5"
-              stroke-miterlimit="1.80775"
-              stroke-dasharray="32 32"
+              strokeWidth="5"
+              strokeMiterlimit="1.80775"
+              strokeDasharray="32 32"
             />
-          </svg>
-
+          </svg> */}
+          <img
+            src={fitnessBg}
+            alt="Fitness models"
+            className="position-absolute top-50 translate-middle"
+            style={{ left: "147px", width: "774px", height: "458px" }}
+          />
           {/* Fitness Models Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
           <img
             src={fitnessImage}
             alt="Fitness models"
             className="img-fluid position-relative fitness-img"
-            style={{ width: "508.38px", height: "500px", zIndex: "1" }}
+            style={{ width: "465.38px", height: "504px", zIndex: "1" }}
           />
-
-          <div className="position-relative dish-wrapper">
-            <img src={dishImage} alt="Dish" className="dish-img" />
-          </div>
+          </motion.div>
+          <motion.div
+            className="dish-wrapper position-absolute"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <img src={dishImage} alt="Dish" />
+          </motion.div>
 
           {/* Calorie Information Box */}
           <div
@@ -170,15 +197,16 @@ const HeroSection = () => {
 const NearbyDelivery = () => {
   return (
     <motion.div
-      className="col-md-2 d-flex flex-column align-items-start bg-white p-3 rounded shadow-sm"
+      className="col-md-2 d-flex flex-column align-items-start bg-white  rounded shadow-sm"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       {/* <div className="col-md-2 d-flex flex-column align-items-start bg-white p-3 rounded shadow-sm"> */}
-      <div className="d-flex align-items-center mb-2">
-        <FaLock className="fs-4 text-loc-color me-2" />
+      <div className="d-flex">
+        <img src={bag} alt="bag" style={{ width: "70px", height: "70px" }} />
+
         <div>
           <h6 className="fw-bold mb-0">Near by Delivery</h6>
           <p className="text-muted small mb-0">
@@ -186,26 +214,71 @@ const NearbyDelivery = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex align-items-center mt-2">
-        <img
-          src={logo1}
-          alt="Gym 1"
-          className="rounded-circle border border-white"
-          style={{ width: "32px", height: "32px", marginLeft: "-5px" }}
-        />
-        <img
-          src={logo2}
-          alt="Gym 2"
-          className="rounded-circle border border-white"
-          style={{ width: "32px", height: "32px", marginLeft: "-5px" }}
-        />
-        <img
-          src={logo3}
-          alt="Gym 3"
-          className="rounded-circle border border-white"
-          style={{ width: "32px", height: "32px", marginLeft: "-5px" }}
-        />
-        <FaArrowRight className="ms-2 text-dark fs-5" />
+      <div className="d-flex align-items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={logo1}
+            alt="Gym 1"
+            className="rounded-circle border border-white"
+            style={{ width: "62px", height: "62px", marginLeft: "64px" }}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={logo2}
+            alt="Gym 2"
+            className="rounded-circle border border-white"
+            style={{ width: "62px", height: "62px", marginLeft: "-26px" }}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={logo3}
+            alt="Gym 3"
+            className="rounded-circle border border-white"
+            style={{ width: "62px", height: "62px", marginLeft: "-26px" }}
+          />
+        </motion.div>
+        <svg
+          width="62"
+          height="62"
+          viewBox="0 0 62 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ marginLeft: "-26px" }}
+        >
+          <circle
+            cx="36"
+            cy="36"
+            r="34"
+            fill="white"
+            stroke="white"
+            stroke-width="4"
+          />
+        </svg>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <img src={arrow} alt="Gym 3" style={{ marginLeft: "-46px" }} />
+        </motion.div>
       </div>
     </motion.div>
     // {/* </div> */}

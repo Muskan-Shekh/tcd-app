@@ -13,6 +13,17 @@
 }
 .btn-custom-success {
   background-color: #6ec207 !important;
+  height: 71px;
+}
+.btn-custom-success:hover{
+  transition: transform .4s;
+  transform: scale(1.2); 
+}
+.btn-light:hover{
+  background-color: #6ec207 !important;
+  color: white !important;
+  transition: transform .4s;
+  transform: scale(1.2); 
 }
 .bg-custom-dark {
   background-color: #232229 !important;
@@ -26,46 +37,25 @@
   font-size: 24px;
   font-family: "Poppins"
 }
-body {
-  font-family: "Poppins";
-}
+
 .heading{
-  font-family: "PT Serif" ;
+  font-family: "PT Serif";
   font-size: 50px;
+  font-weight: bold;
+}
+
+.para1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 22px;
 }
 .dish-wrapper {
-  position: absolute;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background: white;
-  padding: 0px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  left: -73px;
+  bottom: 24px;
 }
 
-/* Add pseudo-elements for the curved borders */
-.dish-wrapper::before,
-.dish-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 40px; /* Length of the arc */
-  height: 10px; /* Thickness of the arc */
-  border-radius: 50px;
-}
-
-.dish-wrapper::before {
-  top: 0px;
-    left: 1px;
-    border-top: 4px solid #6ec207;
-    transform: rotate(-40deg);
-}
-
-.dish-wrapper::after {
-  bottom: -5px;
-  right: -23px;
-  border-bottom: 4px solid #a0a0a0; 
-  transform: rotate(-44deg);
-}
 
 .fitness-img {
   cursor: pointer;
@@ -144,22 +134,13 @@ body {
 
 .dish-container {
   position: absolute;
-  top: -30px;
-  left: 20px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid #d4e9be;
-  background: white;
+  top: -60px;
+  left: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dish-img2 {
-  width: 80%;
-  border-radius: 50%;
-}
 
 .content-container {
   position: absolute;
@@ -210,14 +191,11 @@ body {
 }
 
 .rewards-img {
-  max-width: 100%;
-  height: auto;
+  width: 520px;
+  height: 310px;
 }
 
 /* why choose section */
-.why-choose-tcd h2 {
-  font-size: 28px;
-}
 
 .why-choose-tcd ul {
   padding-left: 0;
@@ -234,8 +212,8 @@ body {
 }
 
 .checkmark-circle {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color:#6ec207; /* Green background */
   color: white;
   border-radius: 50%;
@@ -321,8 +299,17 @@ body {
 
 .mobile-mockup {
   max-width: 300px;
-  height: 350px !important;
-  position: relative;
+  height: 500px !important;
+  position: absolute;
+  z-index: 2;
+  right: -441px;
+  top: 38px;
+}
+
+.mobile-mockup1 {
+  max-width: 300px;
+  height: 500.47px !important;
+  position: absolute;
   z-index: 2;
   right: -480px;
 }
@@ -331,11 +318,14 @@ body {
   .mobile-mockup {
     max-width: 250px;
   }
+  .mobile-mockup1 {
+    max-width: 250px;
+  }
 }
 
 /* footer section */
 .footer {
-  background-color: #121212;
+  background-color: #232229;
   position: relative;
   padding-top: 120px;
   color: white;
@@ -343,7 +333,8 @@ body {
 
 .footer-wave {
   position: absolute;
-  top: -120px; /* Adjust this to move wave down */
+  top: -4px; /* Adjust this to move wave down */
+  /* top: -120px; */
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -370,16 +361,13 @@ body {
 }
 
 .footer-bottom {
-  background: #000;
+  background: #232229;
   color: #ccc;
   font-size: 14px;
   padding: 10px 0;
 }
 
 /* // best seen at 1500px or less */
-
-
-
 .ocean { 
   height: 5%;
   width:100%;
