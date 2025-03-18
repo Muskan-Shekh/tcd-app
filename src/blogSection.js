@@ -501,11 +501,11 @@ const BlogSection = () => {
                 <div className="footer-menu">
                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Feature</h6>
                 <ul className="list-unstyled" style={{marginTop:"20px" }}>
-                  <li>Home</li>                  
-                  <li style={{paddingTop:"26px" }}>Our Menu</li>                  
-                  <li style={{paddingTop:"26px" }}>About Us</li>                  
-                  <li style={{paddingTop:"26px" }}>Blogs</li>                  
-                  <li style={{paddingTop:"26px" }}>Contact Us</li>
+                  <li><a href="#" className="no-style-link">Home</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Our Menu</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">About Us</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Blogs</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Contact Us</a></li>
                 </ul>
                 </div>
                
@@ -530,7 +530,7 @@ const BlogSection = () => {
                       fill="#69CD01"
                     />
                   </svg>
-                  {"  +91 704547272"}
+                  <a href="tel:+91704547272" className="no-style-link" >{"  +91 704547272"}</a>
                 </p>
                 
                 <p style={{paddingTop:"26px" }}>
@@ -549,17 +549,17 @@ const BlogSection = () => {
                       fill="#69CD01"
                     />
                   </svg>
-                  {"  info@thecorrectdiet.com"}
+                  <a href="mailto:info@thecorrectdiet.com" className="no-style-link" >{"  info@thecorrectdiet.com"}</a>
                 </p>
                 
-                <p style={{paddingTop:"26px" }}>
+                <address style={{paddingTop:"26px",cursor:"pointer"  }} className="no-style-link">
                   <svg
                     width="26"
                     height="26"
                     viewBox="0 0 23 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    style={{ marginRight: "0.6rem" }}
+                    style={{ marginRight: "0.6rem", }}
                   >
                     <path
                       fill-rule="evenodd"
@@ -570,9 +570,9 @@ const BlogSection = () => {
                   </svg>
                   {" The Indian Food Company, Plot"} <br></br>{" "}
                   <span style={{ marginLeft: "2rem" }}>
-                    No. 357, Raja Park, Jaipur
+                  No. 357, Raja Park, Jaipur
                   </span>
-                </p>
+                </address>
               </div>
 
               {/* Social Media & Apps */}

@@ -3,6 +3,13 @@
   max-width: 1510px !important;
   width: 98% !important;
 }
+.no-style-link {
+  color: inherit; /* Removes the color */
+  text-decoration: none; /* Removes the underline */
+}
+.no-style-link:hover{
+  color: #6ec207 !important;
+}
 
 /* Font Family Css */
 
