@@ -60,10 +60,10 @@ const BlogSection = () => {
         >
           {/* <div className="text-center mb-4"> */}
           <h2 className="heading">
-            <strong>Our</strong>{" "}
-            <span className="text-custom-success">Blogs</span>
+            <strong style={{ fontFamily:"PT Serif" }}>Our</strong>{" "}
+            <span className="text-custom-success" style={{ fontFamily:"PT Serif" }}>Blogs</span>
           </h2>
-          <p>
+          <p style={{ fontSize:"22px", fontWeight:"500" }}>
             Health blogs that keep you informed about good <br></br>health
             practices and achieve your goals.
           </p>
@@ -100,27 +100,27 @@ const BlogSection = () => {
       </Container>
 
       <motion.div
-        className="app-download-section py-2 container"
+        className="app-download-section container"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         {/* <section className="app-download-section py-2 container"> */}
-        <Container>
+        
           <Row
-            className="align-items-center"
-            style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
+            className=""            
           >
             {/* Left Side - Text Content */}
-            <Col lg={5} className="position-absolute">
-              <h2
+            <Col lg={8} className="d-flex align-items-center justify-content-between" style={{ paddingTop:"90px", paddingBottom:"107px"}}>
+            <div>
+            <h2
                 className="text-white fw-bold"
-                style={{ fontFamily: "PT Serif", fontSize: "30px" }}
+                style={{ fontFamily: "PT Serif", fontSize: "40px" }}
               >
                 Download Our Mobile App <br></br> Now! and Get 25% OFF
               </h2>
-              <p className="text-custom-success">
+              <p className="text-custom-success" style={{ fontSize: "21px", fontWeight:"500", marginTop:"20px",  marginBottom:"30px" }}>
                 Prime Membership Exclusive access to premium health <br></br>{" "}
                 awareness videos and expert guidance and free consultations.
               </p>
@@ -132,8 +132,9 @@ const BlogSection = () => {
                 />
                 <img src={appStore} alt="App Store" className="store-badge" />
               </div>
-            </Col>
-            <Col lg={2} className="text-center position-relative">
+            </div>
+              
+              <div className="text-center position-relative">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -147,9 +148,8 @@ const BlogSection = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   style={{
-                    width: "203px",
-                    height: "204.47px",
-                    marginLeft: "35rem",
+                    width: "259px",
+                    height: "260px",                    
                   }}
                 >
                   <g opacity="0.2">
@@ -296,12 +296,13 @@ const BlogSection = () => {
                   </g>
                 </svg>
               </motion.div>
-            </Col>
+            </div>
+            </Col>            
             {/* Right Side - Mobile Mockup */}
+           
             <Col
-              lg={5}
-              className="text-center position-relative"
-              style={{ top: "-233px" }}
+              lg={4}
+              className=" position-relative"              
             >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -316,7 +317,7 @@ const BlogSection = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="position-absolute"
-                  style={{ right: "-552px", top: "-23px" }}
+                  style={{ right: "-80px", top: "-60px" }}
                 >
                   <path
                     d="M8.23199 3.40805C8.67117 7.73691 8.23739 16.9556 2.98889 19.1997M27.2474 23.8923C24.7898 25.2842 19.4442 28.5959 17.7227 30.7074M40.2211 16.2165C39.3105 16.2101 36.7236 16.7622 33.6605 19.0216M65.8497 36.4522C58.2276 35.3173 40.0932 35.544 28.5327 45.5302"
@@ -350,9 +351,9 @@ const BlogSection = () => {
                   className="mobile-mockup img-fluid"
                 />
               </motion.div>
-            </Col>
-          </Row>
-        </Container>
+            </Col>          
+            
+          </Row>        
       </motion.div>
       {/* </section> */}
 
@@ -371,7 +372,7 @@ const BlogSection = () => {
         <p className="fw-semibold text-[#3F3F3F]" style={{ fontSize: "26px" }}>
           Talk to our Dietitian!
         </p>
-        <p className="text-muted mx-auto w-50 para1">
+        <p className="text-muted mx-auto w-50 para1" style={{ marginTop:"20px", marginBottom:"30px" }}>
           Don’t know where to start or have any specific health conditions?
           Consult our experienced Dietitian and get your meals customised
           accordingly!
@@ -426,7 +427,7 @@ const BlogSection = () => {
         </div>
 
         {/* Contact Button */}
-        <Button className="mt-4  rounded-pill shadow-sm btn-custom-success border px-3">
+        <Button className="mt-4  rounded-pill shadow-sm btn-custom-success need-help-btn " style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
           Contact Now
         </Button>
       </motion.div>
@@ -442,13 +443,12 @@ const BlogSection = () => {
             ></path>
             
           </svg> */}
-          <img src={slice} alt="Avatar 2" className="w-full" />
+          <img src={slice} alt="Avatar 2" className="w-full" style={{width:"100%"}}/>
         </div>
 
         {/* Footer Content */}
         <motion.div
-          className="footer-content py-5 px-3 text-light"
-          style={{ padding: "4rem" }}
+          className="footer-content text-light"          
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
@@ -457,7 +457,7 @@ const BlogSection = () => {
           <div className="container">
             <div className="row">
               {/* Logo & Description */}
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <svg
                   width="93"
                   height="59"
@@ -497,28 +497,27 @@ const BlogSection = () => {
               </div>
 
               {/* Features */}
-              <div className="col-md-2">
-                <h6 className="text-light">Feature</h6>
-                <ul className="list-unstyled">
-                  <li>Home</li>
-                  <br></br>
-                  <li>Our Menu</li>
-                  <br></br>
-                  <li>About Us</li>
-                  <br></br>
-                  <li>Blogs</li>
-                  <br></br>
-                  <li>Contact Us</li>
+              <div className="col-md-3 d-flex justify-content-center">
+                <div className="footer-menu">
+                <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Feature</h6>
+                <ul className="list-unstyled" style={{marginTop:"20px" }}>
+                  <li>Home</li>                  
+                  <li style={{paddingTop:"26px" }}>Our Menu</li>                  
+                  <li style={{paddingTop:"26px" }}>About Us</li>                  
+                  <li style={{paddingTop:"26px" }}>Blogs</li>                  
+                  <li style={{paddingTop:"26px" }}>Contact Us</li>
                 </ul>
+                </div>
+               
               </div>
 
               {/* Contact */}
               <div className="col-md-3">
-                <h6 className="text-light">Get in Touch</h6>
-                <p>
+                <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Get in Touch</h6>
+                <p style={{paddingTop:"20px" }}>
                   <svg
-                    width="18"
-                    height="18"
+                    width="26"
+                    height="26"
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -533,11 +532,11 @@ const BlogSection = () => {
                   </svg>
                   {"  +91 704547272"}
                 </p>
-                <br></br>
-                <p>
+                
+                <p style={{paddingTop:"26px" }}>
                   <svg
-                    width="18"
-                    height="18"
+                    width="26"
+                    height="26"
                     viewBox="0 0 23 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -552,11 +551,11 @@ const BlogSection = () => {
                   </svg>
                   {"  info@thecorrectdiet.com"}
                 </p>
-                <br></br>
-                <p>
+                
+                <p style={{paddingTop:"26px" }}>
                   <svg
-                    width="18"
-                    height="18"
+                    width="26"
+                    height="26"
                     viewBox="0 0 23 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -578,8 +577,8 @@ const BlogSection = () => {
 
               {/* Social Media & Apps */}
               <div className="col-md-3">
-                <h6 className="text-light">Follow Us on Social Media</h6>
-                <div className="d-flex gap-3">
+                <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Follow Us on Social Media</h6>
+                <div className="d-flex gap-3" style={{marginTop:"20px" }}>
                   <i
                     className="bi bi-twitter"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
@@ -594,14 +593,15 @@ const BlogSection = () => {
                   ></i>
                   <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
                 </div>
-                <div className="mt-3">
+                <div style={{paddingTop:"26px" }}>
                   <img
                     src={googlePlay}
                     alt="Google Play"
-                    width="120"
-                    className="me-2"
+                    width="203"
+                    className="me-2" 
+                    style={{ display:"block", height:"59px"}}
                   />
-                  <img src={appStore} alt="App Store" width="120" />
+                  <img src={appStore} alt="App Store" width="203"  style={{ display:"block", height:"59px", marginTop:"23px"}} />
                 </div>
               </div>
             </div>
@@ -609,8 +609,8 @@ const BlogSection = () => {
         </motion.div>
         <hr></hr>
         {/* Copyright Section */}
-        <div className="footer-bottom d-flex flex-row py-3">
-          <p className="" style={{ marginLeft: "7rem", color: "#9D9D9D" }}>
+        <div className="footer-bottom d-flex flex-row py-3 container">
+          <p className="" style={{ color: "#9D9D9D" }}>
             Privacy Policy | Terms and Conditions
           </p>
           <p className="" style={{ marginLeft: "14rem" }}>

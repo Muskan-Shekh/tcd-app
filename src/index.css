@@ -1,3 +1,22 @@
+/* container width  */
+.container{
+  max-width: 1510px !important;
+  width: 98% !important;
+}
+
+/* Font Family Css */
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+/* Header Css */
+nav .active{
+  color: #6ec207;
+}
+nav a:hover{
+  color: #6ec207 !important;
+}
+
 /* Hero section */
 .sticky-header {
   position: fixed;
@@ -8,22 +27,30 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
+h1 span, h2 span{
+  font-family: "PT Serif";
+}
+
 .text-custom-success {
   color: #6ec207 !important;
 }
 .btn-custom-success {
-  background-color: #6ec207 !important;
-  height: 71px;
+  background-color: #6ec207 !important;  
+}
+.partner-rewards-btn, .need-help-btn{
+  border: 1px solid transparent !important;
+}
+.partner-rewards-btn:hover, .need-help-btn:hover{
+  border-color:#232229 !important; 
+  background: none !important;
 }
 .btn-custom-success:hover{
-  transition: transform .4s;
-  transform: scale(1.2); 
+  background-color: #fff !important;
+  color: #000 !important;
 }
 .btn-light:hover{
   background-color: #6ec207 !important;
-  color: white !important;
-  transition: transform .4s;
-  transform: scale(1.2); 
+  color: white !important;  
 }
 .bg-custom-dark {
   background-color: #232229 !important;
@@ -46,7 +73,7 @@
 
 .para1 {
   font-family: "Poppins";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
 }
 .dish-wrapper {
@@ -106,7 +133,8 @@
 }
 
 .circular-text textPath {
-  fill: #2D722A; /* ✅ Apply green text color */
+  fill: #2D722A;/* ✅ Apply green text color */
+  letter-spacing: 2px; 
 }
 
 
@@ -123,7 +151,7 @@
 .expertise-section {
   position: relative;
   color: white;
-  /* padding: 50px; */
+  padding: 147px 0;
 }
 
 .background-img {
@@ -134,26 +162,25 @@
 
 .dish-container {
   position: absolute;
-  top: -60px;
-  left: 130px;
+  top: -206px;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 
-.content-container {
+/* .content-container {
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-}
+} */
 
 .health-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 15px;  
 }
 
 .health-item {
@@ -187,7 +214,7 @@
 .partner-rewards {
   max-width: 1200px;
   margin: auto;
-  margin-top: 6rem;
+  margin: 120px 0;
 }
 
 .rewards-img {
@@ -202,8 +229,10 @@
 }
 
 .why-choose-tcd li {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  
 }
 
 .why-choose-tcd img {
@@ -274,10 +303,10 @@
 .app-download-section {
   background-color: #1A5632;
   border-radius: 20px;
-  padding-right: 4.5rem !important;
-  padding-left: 4.5rem !important;
+  padding-right: 81px !important;
+  padding-left: 81px !important;
   position: relative;
-  margin-top: 8rem;
+  margin-top: 120px;
 }
 
 .text-warning {
@@ -285,26 +314,27 @@
 }
 
 .store-badge {
-  width: 150px;
-  height: auto;
+  width: 203px;
+  height: 59px;
   cursor: pointer;
 }
 
 .mobile-mockup {
-  max-width: 300px;
-  height: 500px !important;
+  width: 269px;
+  height: 580px !important;
   position: absolute;
   z-index: 2;
-  right: -441px;
-  top: 38px;
+  right: 60px;;
+  top: -26px;
 }
 
 .mobile-mockup1 {
-  max-width: 300px;
-  height: 500.47px !important;
+  width: 269px;
+  height: 580px !important;
   position: absolute;
   z-index: 2;
-  right: -480px;
+  right: 0;
+  top: -46px;
 }
 
 @media (max-width: 768px) {
@@ -320,7 +350,7 @@
 .footer {
   background-color: #232229;
   position: relative;
-  padding-top: 120px;
+  padding-top: 197px;
   color: white;
 }
 
@@ -350,7 +380,7 @@
 .footer-content {
   position: relative;
   z-index: 1;
-  padding: 40px 20px;
+  padding-bottom: 30px;
 }
 
 .footer-bottom {

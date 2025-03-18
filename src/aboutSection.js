@@ -7,7 +7,8 @@ const AboutSection = () => {
   return (
     <>
       <motion.div
-        className="about-section position-relative p-5 text-white container"
+        className="about-section position-relative text-white container"
+        style={{padding:"72px 0 72px 72px"}}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -40,7 +41,7 @@ const AboutSection = () => {
           />
         </motion.div>
         {/* Content */}
-        <div className="container d-flex flex-row p-4">
+        <div className=" d-flex justify-content-between">
           <div>
             <h2 className="fw-bold heading">
               About <span className="text-custom-success">TCD</span>
@@ -52,13 +53,14 @@ const AboutSection = () => {
               achieving their fitness goals and managing various medical{" "}
               <br></br> conditions through proper nutrition.
             </p>
-            <button className="btn btn-custom-success text-white rounded-pill px-4">
+            <button className="btn btn-custom-success text-white rounded-pill border-0" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
               Read More
             </button>
           </div>
           {/* Rotating Circular Logo */}
-          <div className="position-relative" style={{ marginLeft: "13rem" }}>
-            <div className="circular-text">
+          <div>
+           <div className="position-relative" style={{ marginRight:"50px" }}>
+           <div className="circular-text">
               <svg viewBox="0 0 200 200">
                 <path
                   id="circle"
@@ -112,6 +114,8 @@ const AboutSection = () => {
                 />
               </svg>
             </div>
+           </div>          
+            
           </div>
         </div>
       </motion.div>

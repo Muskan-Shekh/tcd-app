@@ -1,6 +1,6 @@
 import React from "react";
 import dishImage from "./assets/foodPlate.svg"; // Replace with actual dish image path
-import backgroundImage from "./assets/bgImage.png";
+// import backgroundImage from "./assets/bgImage.png";
 // Import icons
 import preWorkoutIcon from "./assets/icon1.svg";
 import diabetesIcon from "./assets/icon2.svg";
@@ -40,27 +40,29 @@ const Expertise = () => {
     <>
       {/* <div className="expertise-section position-relative"> */}
       <motion.div
-        className="expertise-section position-relative"
+        className="expertise-section "
+        style={{ background: "url(http://localhost:3000/bgImage.png) no-repeat", backgroundSize:"cover" }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         {/* Background Image */}
-        <img
+        {/* <img
           src={backgroundImage}
           alt="Healthy Lifestyle"
           className="background-img"
-        />
+        /> */}
 
-        {/* Circular Dish Image */}
-        <div className="dish-container">
-          <img src={dishImage} alt="Dish" style={{ width: "160px" }} />
-        </div>
-
-        {/* Content */}
-        <div className="content-container d-flex flex-row">
-          <div className="" style={{ paddingTop: "8rem" }}>
+        
+        <div className="container position-relative">
+          {/* Circular Dish Image */}
+          <div className="dish-container">
+            <img src={dishImage} alt="Dish" style={{ width: "160px" }} />
+          </div>
+          {/* Content */}
+        <div className="content-container d-flex align-items-center">
+          <div className="col-5">
             <h2 className="fw-bold heading">
               Expertise in <br></br>providing{" "}
               <span className="text-custom-success">diet for</span>
@@ -69,15 +71,15 @@ const Expertise = () => {
               TCD is focused on providing wholesome nutritious <br></br> meals
               for a healthy lifestyle.
             </p>
-            <button className="btn btn-custom-success text-white rounded-pill px-3">
+            <button className="btn btn-custom-success text-white rounded-pill border-0" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms", marginTop:"14px"}}>
               Get the App
             </button>
           </div>
           {/* Health Categories */}
           {/* Health Categories with PNG Icons */}
+          <div  className=" col-7 d-flex justify-content-end" >
           <motion.div
-            className="health-grid"
-            style={{ padding: "4rem" }}
+            className="health-grid"           
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
@@ -96,12 +98,16 @@ const Expertise = () => {
               </div>
             ))}
           </motion.div>
+          </div>
         </div>
+        </div>      
+
+        
       </motion.div>
       {/* </div> */}
 
       <motion.div
-        className="partner-rewards container py-5"
+        className="partner-rewards container"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -110,8 +116,8 @@ const Expertise = () => {
         {/* <section className="partner-rewards container py-5"> */}
         <div className="row align-items-center">
           {/* Left Side - Text Content */}
-          <div className="col-md-6 para1">
-            <h2 className="heading" style={{ fontSize: "40px" }}>
+          <div className="col-md-7 para1">
+            <h2 className="heading">
               Become a Partner &{" "}
               <span className="text-custom-success">Earn</span> Rewards
             </h2>
@@ -130,13 +136,13 @@ const Expertise = () => {
               <br />
               Don’t miss this easy money-making opportunity!
             </p>
-            <button className="btn btn-custom-success rounded-pill px-3 text-white">
+            <button className="btn partner-rewards-btn btn-custom-success rounded-pill text-white" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
               Download the app & start earning today!
             </button>
           </div>
 
           {/* Right Side - Image */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-5 text-center">
             <img
               src={rewardsImage}
               alt="Rewards"
@@ -158,15 +164,15 @@ const Expertise = () => {
           {/* <section className="why-choose-tcd container py-5"> */}
           <div className="row align-items-center">
             {/* Left Content */}
-            <div className="col-md-7 d-flex flex-row">
+            <div className="col-md-8 d-flex align-items-center" style={{gap: "56px"}}>    
               <div>
-                <h2 className="heading" style={{ fontSize: "40px" }}>
-                  Why Choose TCD as a Lifetime
+                <h2 className="heading" style={{ fontSize: "50px", fontWeight:"700" }}>
+                  Why Choose TCD as a <br></br> Lifetime
                   <span className="text-custom-success"> Fitness</span> Partner?
                 </h2>
-                <ul className="list-unstyled mt-4 para1">
+                <ul className="list-unstyled para1" style={{ marginTop: "35px" }}>
                   {features.map((feature, index) => (
-                    <li key={index} className="d-flex align-items-center mb-3">
+                    <li key={index} className="d-flex align-items-center">
                       <svg
                         className="checkmark-circle me-2"
                         width="24"
@@ -201,19 +207,18 @@ const Expertise = () => {
                 alt="tcd logo"
                 style={{
                   width: "203px",
-                  height: "204.47px",
-                  marginLeft: "4rem",
+                  height: "204.47px",                  
                 }}
               />
             </div>
 
             {/* Right Image */}
-            <div className="col-md-5 text-center">
+            <div className="col-md-4 text-center">
               <img
                 src={mealPlan}
                 alt="Meal Plan"
                 className="img-fluid"
-                style={{ width: "460px", height: "430px" }}
+                style={{ width: "100%", height: "574px", objectFit:"cover" }}
               />
             </div>
           </div>

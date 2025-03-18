@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css"; // Ensure this is correctly linked
-import fitnessImage from "./assets/fitness.svg";
+import fitnessImage from "./assets/fitness.png";
 import logo1 from "./assets/logo1.svg";
 import logo2 from "./assets/logo2.svg";
 import logo3 from "./assets/logo3.svg";
@@ -16,10 +16,12 @@ import fitnessBg from "./assets/fitnessBg.svg";
 
 const Header = () => {
   return (
-    <header className="sticky-header bg-custom-dark text-white px-4 d-flex justify-content-between align-items-center rounded-bottom-5">
+    <header className="sticky-header bg-custom-dark rounded-bottom-5" style={{padding:"20px 0"}}>
+    <div className="container">
+      <div className="d-flex align-items-center">
       <div
         className="h4 fw-bold d-flex align-items-center"
-        style={{ marginLeft: "3rem" }}
+        
       >
         <svg
           width="91"
@@ -53,11 +55,12 @@ const Header = () => {
           />
         </svg>
       </div>
-      <nav className="d-none d-md-flex gap-5" style={{ marginLeft: "25rem" }}>
-        <a href="/" className="text-custom-success text-decoration-none">
+      <nav className="d-none d-md-flex" style={{marginLeft:"auto", marginRight:"90px", gap:"50px"}}
+        >
+        <a href="/" className="active text-decoration-none" style={{fontWeight:"500", transition:"all 500ms ease 0ms"}}>
           Home
         </a>
-        <a href="/" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none" style={{fontWeight:"500", transition:"all 500ms ease 0ms"}}>
           Our Meals{" "}
           <svg
             width="14"
@@ -74,22 +77,23 @@ const Header = () => {
             />
           </svg>
         </a>
-        <a href="/" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none" style={{fontWeight:"500", transition:"all 500ms ease 0ms"}}>
           About Us
         </a>
-        <a href="/" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none" style={{fontWeight:"500", transition:"all 500ms ease 0ms"}}>
           Blogs
         </a>
-        <a href="/" className="text-white text-decoration-none">
+        <a href="/" className="text-white text-decoration-none" style={{fontWeight:"500", transition:"all 500ms ease 0ms"}}>
           Contact Us
-        </a>
+        </a>        
       </nav>
       <button
-        className="btn btn-light rounded-pill px-4"
-        style={{ marginRight: "3rem", height:"50px" }}
+        className="btn btn-light rounded-pill border-0 " style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}       
       >
         Get the App
       </button>
+      </div>      
+    </div>      
     </header>
   );
 };
@@ -99,7 +103,7 @@ const HeroSection = () => {
     <>
       <motion.div
         className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5"
-        style={{ width: "1518px", height: "659px", marginTop: "4rem" }}
+        style={{ marginTop: "150px" }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -138,12 +142,12 @@ const HeroSection = () => {
               strokeDasharray="32 32"
             />
           </svg> */}
-          <img
+          {/* <img
             src={fitnessBg}
             alt="Fitness models"
             className="position-absolute top-50 translate-middle"
             style={{ left: "147px", width: "774px", height: "458px" }}
-          />
+          /> */}
           {/* Fitness Models Image */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -155,23 +159,15 @@ const HeroSection = () => {
             src={fitnessImage}
             alt="Fitness models"
             className="img-fluid position-relative fitness-img"
-            style={{ width: "465.38px", height: "504px", zIndex: "1" }}
+            style={{ height: "600px", zIndex: "1", objectFit:"cover" }}
           />
           </motion.div>
-          <motion.div
-            className="dish-wrapper position-absolute"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <img src={dishImage} alt="Dish" />
-          </motion.div>
+          
 
           {/* Calorie Information Box */}
           <div
-            className="position-absolute bottom-0 end-0 bg-white p-3 rounded shadow-sm"
-            style={{ zIndex: "3" }}
+            className="position-absolute p-3"
+            style={{ zIndex: "3", right:"48px", bottom:"-16px", borderRadius:"28px",  background:"rgba(255, 255, 255, 0.97)" }}
           >
             <p className="text-muted mb-0">Daily Calories</p>
             <p className="fw-bold mb-0">1400-3500 Cal</p>
@@ -198,7 +194,7 @@ const HeroSection = () => {
 const NearbyDelivery = () => {
   return (
     <motion.div
-      className="col-md-2 d-flex flex-column align-items-start bg-white  rounded shadow-sm"
+      className="col-md-2 d-flex flex-column align-items-start "
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -278,7 +274,7 @@ const NearbyDelivery = () => {
           transition={{ duration: 0.9, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img src={arrow} alt="Gym 3" style={{ marginLeft: "-46px" }} />
+         <a href="#"><img src={arrow} alt="Gym 3" style={{ marginLeft: "-46px" }} /></a> 
         </motion.div>
       </div>
     </motion.div>
