@@ -449,3 +449,17 @@ h1 span, h2 span{
     transform: translate3d(0,5px,0);
   }
 }
+
+/* Responsive Design*/
+
+@media (max-width: 991px) {
+  
+/* Hero section css*/
+
+  .text-custom-muted {    
+    font-size: 21px;
+  }
+  .near-gym-logo{
+    margin-left: 27px !important;
+  }
+}
