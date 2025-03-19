@@ -125,12 +125,16 @@ const BlogSection = () => {
                 awareness videos and expert guidance and free consultations.
               </p>
               <div className="d-flex gap-3">
+              <a href="https://play.google.com/" className="no-style-link" > 
                 <img
                   src={googlePlay}
                   alt="Google Play"
                   className="store-badge"
                 />
+                </a>
+                 <a href="https://www.apple.com/in/app-store/" className="no-style-link" >
                 <img src={appStore} alt="App Store" className="store-badge" />
+                </a>
               </div>
             </div>
               
@@ -579,21 +583,30 @@ const BlogSection = () => {
               <div className="col-md-3">
                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Follow Us on Social Media</h6>
                 <div className="d-flex gap-3" style={{marginTop:"20px" }}>
+                <a href="https://x.com/" className="no-style-link" >
                   <i
                     className="bi bi-twitter"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
                   ></i>
+                  </a>
+                  <a href="https://linked.com/" className="no-style-link" > 
                   <i
                     className="bi bi-linkedin"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
                   ></i>
+                  </a>
+                  <a href="https://www.instagram.com/" className="no-style-link" > 
                   <i
                     className="bi bi-instagram"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
                   ></i>
+                  </a>
+                  <a href="https://www.youtube.com/" className="no-style-link" > 
                   <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
+                  </a>
                 </div>
                 <div style={{paddingTop:"26px" }}>
+                <a href="https://play.google.com/" className="no-style-link" > 
                   <img
                     src={googlePlay}
                     alt="Google Play"
@@ -601,7 +614,10 @@ const BlogSection = () => {
                     className="me-2" 
                     style={{ display:"block", height:"59px"}}
                   />
+                  </a>
+                  <a href="https://www.apple.com/in/app-store/" className="no-style-link" > 
                   <img src={appStore} alt="App Store" width="203"  style={{ display:"block", height:"59px", marginTop:"23px"}} />
+                </a>
                 </div>
               </div>
             </div>
@@ -610,8 +626,10 @@ const BlogSection = () => {
         <hr></hr>
         {/* Copyright Section */}
         <div className="footer-bottom d-flex flex-row py-3 container">
+          
           <p className="" style={{ color: "#9D9D9D" }}>
-            Privacy Policy | Terms and Conditions
+            <span> <a href="/" className="no-style-link" >Privacy Policy</a> </span> | 
+            <span> <a href="/" className="no-style-link" >Terms and Conditions</a></span>
           </p>
           <p className="" style={{ marginLeft: "14rem" }}>
             © 2025{" "}
