@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import heart from "./assets/heart.svg";
-import weight from "./assets/weight.svg";
-import kidney from "./assets/kidney.svg";
-import diabeties from "./assets/diabeties.svg";
+import heart from "./assets/blog-img-1.jpg";
+import weight from "./assets/blog-img-2.jpg";
+import kidney from "./assets/blog-img-3.jpg";
+import diabeties from "./assets/blog-img-4.jpg";
 
 import mobileMockup from "./assets/mobile.png";
 import mobileMockup1 from "./assets/mobile2.png";
@@ -79,7 +79,7 @@ const BlogSection = () => {
                 viewport={{ once: true }}
               >
                 <Card className="blog-card border-0">
-                  <div className="position-relative"><Card.Img
+                  <div className="blog-card-img position-relative"><Card.Img
                     variant="top"
                     src={blog.image}
                   />
@@ -590,8 +590,8 @@ const BlogSection = () => {
                   <i
                     className="bi bi-instagram"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
-                  ></i>
-                  <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
+                  > </i>
+                  <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>              
                 </div>
                 <div style={{paddingTop:"26px" }}>
                   <img
