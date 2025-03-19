@@ -125,12 +125,16 @@ const BlogSection = () => {
                 awareness videos and expert guidance and free consultations.
               </p>
               <div className="d-flex gap-3">
+              <a href="https://play.google.com/" className="no-style-link" > 
                 <img
                   src={googlePlay}
                   alt="Google Play"
                   className="store-badge"
                 />
+                </a>
+                 <a href="https://www.apple.com/in/app-store/" className="no-style-link" >
                 <img src={appStore} alt="App Store" className="store-badge" />
+                </a>
               </div>
             </div>
               
@@ -501,11 +505,11 @@ const BlogSection = () => {
                 <div className="footer-menu">
                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Feature</h6>
                 <ul className="list-unstyled" style={{marginTop:"20px" }}>
-                  <li>Home</li>                  
-                  <li style={{paddingTop:"26px" }}>Our Menu</li>                  
-                  <li style={{paddingTop:"26px" }}>About Us</li>                  
-                  <li style={{paddingTop:"26px" }}>Blogs</li>                  
-                  <li style={{paddingTop:"26px" }}>Contact Us</li>
+                  <li><a href="#" className="no-style-link">Home</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Our Menu</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">About Us</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Blogs</a></li>                  
+                  <li style={{paddingTop:"26px" }}><a href="#" className="no-style-link">Contact Us</a></li>
                 </ul>
                 </div>
                
@@ -530,7 +534,7 @@ const BlogSection = () => {
                       fill="#69CD01"
                     />
                   </svg>
-                  {"  +91 704547272"}
+                  <a href="tel:+91704547272" className="no-style-link" >{"  +91 704547272"}</a>
                 </p>
                 
                 <p style={{paddingTop:"26px" }}>
@@ -549,17 +553,17 @@ const BlogSection = () => {
                       fill="#69CD01"
                     />
                   </svg>
-                  {"  info@thecorrectdiet.com"}
+                  <a href="mailto:info@thecorrectdiet.com" className="no-style-link" >{"  info@thecorrectdiet.com"}</a>
                 </p>
                 
-                <p style={{paddingTop:"26px" }}>
+                <address style={{paddingTop:"26px",cursor:"pointer"  }} className="no-style-link">
                   <svg
                     width="26"
                     height="26"
                     viewBox="0 0 23 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    style={{ marginRight: "0.6rem" }}
+                    style={{ marginRight: "0.6rem", }}
                   >
                     <path
                       fill-rule="evenodd"
@@ -570,30 +574,44 @@ const BlogSection = () => {
                   </svg>
                   {" The Indian Food Company, Plot"} <br></br>{" "}
                   <span style={{ marginLeft: "2rem" }}>
-                    No. 357, Raja Park, Jaipur
+                  No. 357, Raja Park, Jaipur
                   </span>
-                </p>
+                </address>
               </div>
 
               {/* Social Media & Apps */}
               <div className="col-md-3">
                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight:"600" }}>Follow Us on Social Media</h6>
                 <div className="d-flex gap-3" style={{marginTop:"20px" }}>
+                <a href="https://x.com/" className="no-style-link" >
                   <i
                     className="bi bi-twitter"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
                   ></i>
+                  </a>
+                  <a href="https://linked.com/" className="no-style-link" > 
                   <i
                     className="bi bi-linkedin"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
                   ></i>
+                  </a>
+                  <a href="https://www.instagram.com/" className="no-style-link" > 
                   <i
                     className="bi bi-instagram"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
+<<<<<<< HEAD
                   > </i>
                   <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>              
+=======
+                  ></i>
+                  </a>
+                  <a href="https://www.youtube.com/" className="no-style-link" > 
+                  <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
+                  </a>
+>>>>>>> b3d3b638f9ee59f02ec7e637f44c08413cd8d34b
                 </div>
                 <div style={{paddingTop:"26px" }}>
+                <a href="https://play.google.com/" className="no-style-link" > 
                   <img
                     src={googlePlay}
                     alt="Google Play"
@@ -601,7 +619,10 @@ const BlogSection = () => {
                     className="me-2" 
                     style={{ display:"block", height:"59px"}}
                   />
+                  </a>
+                  <a href="https://www.apple.com/in/app-store/" className="no-style-link" > 
                   <img src={appStore} alt="App Store" width="203"  style={{ display:"block", height:"59px", marginTop:"23px"}} />
+                </a>
                 </div>
               </div>
             </div>
@@ -610,8 +631,10 @@ const BlogSection = () => {
         <hr></hr>
         {/* Copyright Section */}
         <div className="footer-bottom d-flex flex-row py-3 container">
+          
           <p className="" style={{ color: "#9D9D9D" }}>
-            Privacy Policy | Terms and Conditions
+            <span> <a href="/" className="no-style-link" >Privacy Policy</a> </span> | 
+            <span> <a href="/" className="no-style-link" >Terms and Conditions</a></span>
           </p>
           <p className="" style={{ marginLeft: "14rem" }}>
             © 2025{" "}

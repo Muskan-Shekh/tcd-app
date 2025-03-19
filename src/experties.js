@@ -41,7 +41,7 @@ const Expertise = () => {
       {/* <div className="expertise-section position-relative"> */}
       <motion.div
         className="expertise-section "
-        style={{ background: "url(http://localhost:3000/bgImage.png) no-repeat", backgroundSize:"cover" }}
+        style={{ background: "url(/bgImage.png) no-repeat", backgroundSize:"cover" }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
