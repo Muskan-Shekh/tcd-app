@@ -1,7 +1,7 @@
 import React from "react";
-import bgLeaf1 from "./assets/bgLeaf1.png";
-import bgLeaf2 from "./assets/bgLeaf2.png";
-import missionImage from "./assets/missionImage.svg";
+import bgLeaf1 from "../assets/bgLeaf1.png";
+import bgLeaf2 from "../assets/bgLeaf2.png";
+import missionImage from "../assets/missionImage.svg";
 import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
@@ -119,8 +119,6 @@ const AboutSection = () => {
           </div>
         </div>
       </motion.div>
-      {/* </section> */}
-
       <motion.div
         className="container my-9"
         style={{marginTop:"4.5rem",marginBottom:"4.5rem"}}
@@ -154,7 +152,6 @@ const AboutSection = () => {
           </div>
         </div>
       </motion.div>
-      {/* </div> */}
     </>
   );
 };

@@ -1,19 +1,18 @@
 import React from "react";
-import dishImage from "./assets/foodPlate.svg"; // Replace with actual dish image path
-// import backgroundImage from "./assets/bgImage.png";
+import dishImage from "../assets/foodPlate.svg"; 
 // Import icons
-import preWorkoutIcon from "./assets/icon1.svg";
-import diabetesIcon from "./assets/icon2.svg";
-import pcosIcon from "./assets/icon5.svg";
-import kidneyIcon from "./assets/icon7.svg";
-import thyroidIcon from "./assets/icon2.svg";
-import heartIcon from "./assets/icon4.svg";
-import weightIcon from "./assets/icon6.svg";
-import detoxIcon from "./assets/icon8.svg";
+import preWorkoutIcon from "../assets/icon1.svg";
+import diabetesIcon from "../assets/icon2.svg";
+import pcosIcon from "../assets/icon5.svg";
+import kidneyIcon from "../assets/icon7.svg";
+import thyroidIcon from "../assets/icon2.svg";
+import heartIcon from "../assets/icon4.svg";
+import weightIcon from "../assets/icon6.svg";
+import detoxIcon from "../assets/icon8.svg";
 
-import rewardsImage from "./assets/partnerImage.svg";
-import mealPlan from "./assets/foodImage.png";
-import TCDLOGO from "./assets/tcd-custom-logo.png";
+import rewardsImage from "../assets/partnerImage.svg";
+import mealPlan from "../assets/foodImage.png";
+import TCDLOGO from "../assets/tcd-custom-logo.png";
 
 import { motion } from "framer-motion";
 // Health list data with icons

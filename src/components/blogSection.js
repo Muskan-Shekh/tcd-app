@@ -1,20 +1,20 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import heart from "./assets/blog-img-1.jpg";
-import weight from "./assets/blog-img-2.jpg";
-import kidney from "./assets/blog-img-3.jpg";
-import diabeties from "./assets/blog-img-4.jpg";
+import heart from "../assets/blog-img-1.jpg";
+import weight from "../assets/blog-img-2.jpg";
+import kidney from "../assets/blog-img-3.jpg";
+import diabeties from "../assets/blog-img-4.jpg";
 
-import mobileMockup from "./assets/mobile.png";
-import mobileMockup1 from "./assets/mobile2.png";
-import googlePlay from "./assets/googlePlay.png";
-import appStore from "./assets/appStore.png";
+import mobileMockup from "../assets/mobile.png";
+import mobileMockup1 from "../assets/mobile2.png";
+import googlePlay from "../assets/googlePlay.png";
+import appStore from "../assets/appStore.png";
 import { Button } from "react-bootstrap";
-import avatar1 from "./assets/avatar1.png";
-import avatar2 from "./assets/avatar2.png";
-import avatar3 from "./assets/avatar3.png";
+import avatar1 from "../assets/avatar1.png";
+import avatar2 from "../assets/avatar2.png";
+import avatar3 from "../assets/avatar3.png";
 import { motion } from "framer-motion";
-import slice from "./assets/Slice 1.svg";
+
 const blogs = [
   {
     title: "Heart Health",
