@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.blog-description-meal{
+  font-size: 20px;
+  font-weight: 500;
+}
+.blog-price-meal{
+  font-size: 20px;
+  font-weight: 600;
+  color: #117554;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

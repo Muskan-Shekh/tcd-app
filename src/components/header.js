@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header className="sticky-header bg-custom-dark rounded-bottom-5" style={{ padding: "20px 0" }}>
@@ -41,10 +43,10 @@ const Header = () => {
                     </div>
                     <nav className="d-none d-md-flex" style={{ marginLeft: "auto", marginRight: "90px", gap: "50px" }}
                     >
-                        <a href="/" className="active text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
+                        <Link to="/" className="active text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
                             Home
-                        </a>
-                        <a href="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
+                        </Link>
+                        <Link to="/our-meals" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
                             Our Meals{" "}
                             <svg
                                 width="14"
@@ -60,16 +62,16 @@ const Header = () => {
                                     strokeLinecap="round"
                                 />
                             </svg>
-                        </a>
-                        <a href="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
+                        </Link>
+                        <Link to="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
                             About Us
-                        </a>
-                        <a href="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
+                        </Link>
+                        <Link to="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
                             Blogs
-                        </a>
-                        <a href="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
+                        </Link>
+                        <Link to="/" className="text-white text-decoration-none" style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}>
                             Contact Us
-                        </a>
+                        </Link>
                     </nav>
                     <button
                         className="btn btn-light rounded-pill border-0 " style={{ fontWeight: "600", padding: "18px 32px", transition: "all 500ms ease 0ms" }}
