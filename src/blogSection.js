@@ -599,16 +599,11 @@ const BlogSection = () => {
                   <i
                     className="bi bi-instagram"
                     style={{ fontSize: "30px", marginRight: "0.6rem" }}
-<<<<<<< HEAD
-                  > </i>
-                  <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>              
-=======
                   ></i>
                   </a>
                   <a href="https://www.youtube.com/" className="no-style-link" > 
                   <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
                   </a>
->>>>>>> b3d3b638f9ee59f02ec7e637f44c08413cd8d34b
                 </div>
                 <div style={{paddingTop:"26px" }}>
                 <a href="https://play.google.com/" className="no-style-link" > 
