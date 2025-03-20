@@ -196,7 +196,7 @@ const Footer = () => {
 
                 <p className="d-md-block d-none" style={{ color: "#9D9D9D" }}>
                     <span> <a href="/" className="no-style-link" >Privacy Policy</a> </span> |
-                    <span> <a href="/" className="no-style-link" >Terms and Conditions</a></span>
+                    <span> <a href="/terms-and-conditions" className="no-style-link" >Terms and Conditions</a></span>
                 </p>
                 <p className="copy-right-text" style={{ marginLeft: "14rem" }}>
                     © 2025{" "}

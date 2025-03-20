@@ -8,6 +8,7 @@ import Layout from "./components/layout.js";
 import HeroSection from "./components/heroSection.js";
 import OurMeals from "./pages/OurMeals.js";
 import AboutUs from "./pages/AboutUs.js";
+import TermsAndCondition from "./pages/TermsAndCondition.js";
 
 const App = () => {
   return (
@@ -47,6 +48,18 @@ const App = () => {
           <>
           <Layout>
             <AboutUs />
+          </Layout>
+          </>
+        }
+        />
+        {/* terms and conditions */}
+           {/* about-us */}
+           <Route
+        path="terms-and-conditions"
+        element={
+          <>
+          <Layout>
+            <TermsAndCondition />
           </Layout>
           </>
         }

@@ -768,3 +768,189 @@ h2{
   font-size: 24px;
   font-weight: 500;
 }
+
+
+/* terms and conditions css */
+.terms-about{
+  margin-bottom: 40px;
+}
+.terms-about h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.terms-about-p1{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.terms-about-p2{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.terms-about ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.terms-about ul li{
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+.acceptance-of-the-terms h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.acceptance-of-the-terms p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.use-of-website h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.use-of-website p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.privacy-policy h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.privacy-policy p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.privacy-policy a{
+  text-decoration: none;
+}
+.subscription {
+  margin-bottom: 40px;
+}
+.subscription h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.subscription ol li{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.order h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.order p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.payment{
+  margin-bottom: 40px;
+}
+.payment h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.payment p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.payment span{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.delivery {
+  margin-bottom: 40px;
+}
+.delivery h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.delivery ol li{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.legel-conditions{
+  margin-bottom: 40px;
+}
+.legel-conditions h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.legel-conditions p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.legel-conditions span{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  display: inline-block;
+}
+.legel-conditions a{
+  text-decoration: none;
+  word-break: break-word;
+}
+
+/* 
+responsive */
+@media (max-width: 768px) { /* Mobile devices */
+  .terms-about h2,
+  .acceptance-of-the-terms h2,
+  .use-of-website h2,
+  .privacy-policy h2,
+  .subscription h2,
+  .order h2,
+  .payment h2,
+  .delivery h2,
+  .legel-conditions h2 {
+    font-size: 24px;
+  }
+
+  .terms-about-p1,
+  .terms-about-p2,
+  .terms-about ul li,
+  .acceptance-of-the-terms p,
+  .use-of-website p,
+  .privacy-policy p,
+  .subscription ol li,
+  .order p,
+  .payment p,
+  .payment span,
+  .delivery ol li,
+  .legel-conditions p,
+  .legel-conditions span {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+}
