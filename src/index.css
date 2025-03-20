@@ -107,6 +107,7 @@ h1 span, h2 span{
   border-radius: 30px;
   position: relative;
   margin-top: 4rem;
+  z-index: 1;
 }
 
 .bg-leaf {
@@ -197,7 +198,7 @@ h1 span, h2 span{
 }
 
 .health-icon {
-  width: 50px;
+  width: 100px;
   height: 30.57px;
   object-fit: contain;
 }
@@ -239,6 +240,7 @@ h1 span, h2 span{
   font-size: 22px;
   font-weight: 500;
   line-height: 60px;
+  color:#626060 ;
   
 }
 
@@ -247,17 +249,10 @@ h1 span, h2 span{
   border-radius: 10px;
 }
 
-.checkmark-circle {
-  width: 20px;
-  height: 20px;
-  background-color:#6ec207; /* Green background */
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: bold;
+
+i.fa-solid.fa-circle-check {
+  font-size: 30px;
+  color: #5cb85c;
 }
 
 /* blog section */
@@ -353,15 +348,6 @@ h1 span, h2 span{
   top: -46px;
 }
 
-@media (max-width: 768px) {
-  .mobile-mockup {
-    max-width: 250px;
-  }
-  .mobile-mockup1 {
-    max-width: 250px;
-  }
-}
-
 /* footer section */
 .footer {
   background-color: #232229;
@@ -450,7 +436,53 @@ h1 span, h2 span{
   }
 }
 
+
 /* Responsive Design*/
+
+
+/* header mobile css */
+
+.navbar-toggler {
+  border: none !important;
+  color: #6ec207 !important;
+  font-size: 32px !important;
+}
+button:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.offcanvas-body > ul li {
+  padding: 15px;
+  position: relative;
+}
+.offcanvas-body>ul>li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #E4E4E4;
+}
+.offcanvas-body ul li a {
+  color: #212529bf;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.offcanvas .btn_close {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+}
+.offcanvas .btn_close:focus {
+  box-shadow: none;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
 
 @media (max-width: 991px) {
   
@@ -462,4 +494,171 @@ h1 span, h2 span{
   .near-gym-logo{
     margin-left: 27px !important;
   }
+/* app- download section */
+
+  .mobile-mockup {    
+    left: 50%;
+    transform: translateX(-73%);    
+}
+.mobile-mockup1 {  
+  left: 50%; 
+  transform: translateX(-50%);    
+}
+.app-download-section svg{
+  display: none;
+}
+.app-download-section{
+  margin-bottom: 441px;
+}
+.app-download-section {  
+  padding-right: 30px !important;
+  padding-left: 30px !important;  
+  height: 631px;
+}
+.app-download-section h2, .app-download-section p{
+  text-align: center;
+}
+/* about-section css */
+
+.about-section{
+  padding: 50px 0px 50px 40px !important;
+}
+}
+
+@media (max-width: 768px) {
+  .mobile-mockup {
+    max-width: 250px;
+  }
+  .mobile-mockup1 {
+    max-width: 250px;
+  }
+  .main-heading{
+    text-align: center;
+    font-size: 40px;
+  }
+  .banner-text{
+    font-size: 18px;
+    text-align: center;
+  }
+  header{
+    padding: 14px 0 !important;
+  }
+  .hero-sec{
+    margin-top: 90px !important;
+  }
+  .circular-text {
+    width: 170px;
+    height: 149.51px;    
+    margin-left: auto;
+}
+.logo-tcd svg{
+  height: 100px;
+  width: 100px;
+}
+.logo-tcd{
+  right: -14px;
+
+}
+.logo-image{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.logo-content{
+  margin-right: 0 !important;
+}
+.bg-leaf2 { 
+  top: 24px;
+  right: 10px;  
+  width: 75px;
+  height: 64px;
+}
+.lead {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-align: center;
+  line-height: 30px;
+}
+.bg-leaf {
+  width: 68px;
+  bottom: 46px;
+  left: 0;  
+  height: 75px;
+}
+.logo-content{
+  z-index: -1;
+}
+h2{
+  font-size: 30px !important;
+  text-align: center;
+}
+
+
+.our-mission-sec p{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-align: center;
+  line-height: 30px;
+
+}
+.dish-container {
+  display: none;
+}
+.health-grid {
+  grid-template-columns: none;
+  gap: 20px;
+  margin-top: 40px;
+}
+.expertise-section { 
+  padding: 60px 0;
+}
+
+.partner-content{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+
+.why-choose-tcd li {
+  font-size: 16px;  
+  line-height: 20px;
+  margin-bottom: 22px;
+}
+.store-badge {
+  width: 121px;
+  height: 35px;  
+}
+.app-download-section p{
+  font-size: 16px !important; 
+}
+.footer { 
+  padding-top: 110px;  
+}
+.copy-right-text{
+  margin-left:0 !important;
+  text-align: center;
+}
+.about-section {
+  padding: 50px 30px !important;
+}
+.about-section{
+  margin: 0;
+}
+.our-mission-sec{
+  margin-top: 50px !important;
+}
+
+.partner-rewards {
+  
+  margin: 50px 0;
+}
+.app-download-section{
+  margin-top: 50px;
+}
+.app-download-section {
+  margin-bottom: 481px;
+}
 }

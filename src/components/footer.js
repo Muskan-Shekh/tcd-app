@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         {/* Logo & Description */}
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6">
                             <svg
                                 width="93"
                                 height="59"
@@ -68,7 +68,7 @@ const Footer = () => {
                         </div>
 
                         {/* Features */}
-                        <div className="col-md-3 d-flex justify-content-center">
+                        <div className="col-lg-3 col-md-6 d-flex justify-content-md-center mt-md-0 mt-5">
                             <div className="footer-menu">
                                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight: "600" }}>Feature</h6>
                                 <ul className="list-unstyled" style={{ marginTop: "20px" }}>
@@ -83,7 +83,7 @@ const Footer = () => {
                         </div>
 
                         {/* Contact */}
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mt-lg-0 mt-md-4 mt-5">
                             <h6 className="text-light" style={{ fontSize: "18px", fontWeight: "600" }}>Get in Touch</h6>
                             <p style={{ paddingTop: "20px" }}>
                                 <svg
@@ -147,7 +147,7 @@ const Footer = () => {
                         </div>
 
                         {/* Social Media & Apps */}
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mt-lg-0 mt-md-4 mt-5">
                             <h6 className="text-light" style={{ fontSize: "18px", fontWeight: "600" }}>Follow Us on Social Media</h6>
                             <div className="d-flex gap-3" style={{ marginTop: "20px" }}>
                                 <a href="https://x.com/" className="no-style-link" >
@@ -192,20 +192,23 @@ const Footer = () => {
             </motion.div>
             <hr></hr>
             {/* Copyright Section */}
-            <div className="footer-bottom d-flex flex-row py-3 container">
+            <div className="footer-bottom d-md-flex flex-md-row py-3 container">
 
-                <p className="" style={{ color: "#9D9D9D" }}>
+                <p className="d-md-block d-none" style={{ color: "#9D9D9D" }}>
                     <span> <a href="/" className="no-style-link" >Privacy Policy</a> </span> |
                     <span> <a href="/" className="no-style-link" >Terms and Conditions</a></span>
                 </p>
-                <p className="" style={{ marginLeft: "14rem" }}>
+                <p className="copy-right-text" style={{ marginLeft: "14rem" }}>
                     © 2025{" "}
                     <span className="text-custom-success">The Correct Diet (TCD)</span>{" "}
                     | All Rights Reserved
                 </p>
             </div>
         </footer>
+
+        
     );
 };
 
 export default Footer;
+

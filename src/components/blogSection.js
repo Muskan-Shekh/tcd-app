@@ -49,7 +49,7 @@ const blogs = [
 const BlogSection = () => {
   return (
     <>
-      <Container className="">
+      <Container className="our-blog-sec">
         <motion.div
           className="text-center mb-4"
           initial={{ opacity: 0, y: 50 }}
@@ -63,15 +63,18 @@ const BlogSection = () => {
             <strong style={{ fontFamily:"PT Serif" }}>Our</strong>{" "}
             <span className="text-custom-success" style={{ fontFamily:"PT Serif" }}>Blogs</span>
           </h2>
-          <p style={{ fontSize:"22px", fontWeight:"500" }}>
+          <p style={{ fontSize:"22px", fontWeight:"500", color:"#3F3F3F" }}>
             Health blogs that keep you informed about good <br></br>health
             practices and achieve your goals.
           </p>
           {/* </div> */}
         </motion.div>
         <Row>
+        <div className="owl-slider">
+        <div id="carousel-blog" className="owl-carousel">
           {blogs.map((blog, index) => (
-            <Col key={index} md={3}>
+            
+            <div key={index} className="item">        
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -93,9 +96,13 @@ const BlogSection = () => {
                     <p className="blog-doctor">{blog.doctor}</p>
                   </Card.Body>
                 </Card>
-              </motion.div>
-            </Col>
+              </motion.div>            
+            </div>
+           
+            
           ))}
+           </div>
+           </div>
         </Row>
       </Container>
 
@@ -112,7 +119,7 @@ const BlogSection = () => {
             className=""            
           >
             {/* Left Side - Text Content */}
-            <Col lg={8} className="d-flex align-items-center justify-content-between" style={{ paddingTop:"90px", paddingBottom:"107px"}}>
+            <Col lg={8} className="d-lg-flex align-items-center justify-content-between" style={{ paddingTop:"90px", paddingBottom:"107px"}}>
             <div>
             <h2
                 className="text-white fw-bold"
@@ -124,7 +131,7 @@ const BlogSection = () => {
                 Prime Membership Exclusive access to premium health <br></br>{" "}
                 awareness videos and expert guidance and free consultations.
               </p>
-              <div className="d-flex gap-3">
+              <div className="d-flex gap-3 justify-content-lg-start justify-content-center">
               <a href="https://play.google.com/" className="no-style-link" > 
                 <img
                   src={googlePlay}
@@ -376,7 +383,7 @@ const BlogSection = () => {
         <p className="fw-semibold text-[#3F3F3F]" style={{ fontSize: "26px" }}>
           Talk to our Dietitian!
         </p>
-        <p className="text-muted mx-auto w-50 para1" style={{ marginTop:"20px", marginBottom:"30px" }}>
+        <p className="text-muted mx-auto w-md-50 para1" style={{ marginTop:"20px", marginBottom:"30px" }}>
           Don’t know where to start or have any specific health conditions?
           Consult our experienced Dietitian and get your meals customised
           accordingly!

@@ -41,7 +41,7 @@ const AboutSection = () => {
           />
         </motion.div>
         {/* Content */}
-        <div className=" d-flex justify-content-between">
+        <div className=" d-md-flex  justify-content-between">
           <div>
             <h2 className="fw-bold heading">
               About <span className="text-custom-success">TCD</span>
@@ -53,13 +53,14 @@ const AboutSection = () => {
               achieving their fitness goals and managing various medical{" "}
               <br></br> conditions through proper nutrition.
             </p>
+            <div className="d-md-block d-flex  justify-content-center">
             <button className="btn btn-custom-success text-white rounded-pill border-0" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
               Read More
-            </button>
+            </button></div>            
           </div>
           {/* Rotating Circular Logo */}
-          <div>
-           <div className="position-relative" style={{ marginRight:"50px" }}>
+          <div className="logo-image">
+           <div className="position-relative logo-content" style={{ marginRight:"50px" }}>
            <div className="circular-text">
               <svg viewBox="0 0 200 200">
                 <path
@@ -77,7 +78,7 @@ const AboutSection = () => {
                 </text>
               </svg>
             </div>
-            <div className="position-absolute top-50 start-50 translate-middle">
+            <div className="position-absolute top-50 start-50 translate-middle logo-tcd">
               <svg
                 width="176"
                 height="142"
@@ -120,7 +121,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
       <motion.div
-        className="container my-9"
+        className="container my-9 our-mission-sec"
         style={{marginTop:"4.5rem",marginBottom:"4.5rem"}}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

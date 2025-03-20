@@ -60,8 +60,8 @@ const Expertise = () => {
             <img src={dishImage} alt="Dish" style={{ width: "160px" }} />
           </div>
           {/* Content */}
-        <div className="content-container d-flex align-items-center">
-          <div className="col-5">
+        <div className="content-container d-flex align-items-center flex-wrap">
+          <div className="col-md-5 col-12 text-center">
             <h2 className="fw-bold heading">
               Expertise in <br></br>providing{" "}
               <span className="text-custom-success">diet for</span>
@@ -76,7 +76,7 @@ const Expertise = () => {
           </div>
           {/* Health Categories */}
           {/* Health Categories with PNG Icons */}
-          <div  className=" col-7 d-flex justify-content-end" >
+          <div  className=" col-md-7 col-12 d-flex justify-content-md-end " >
           <motion.div
             className="health-grid"           
             initial={{ opacity: 0, y: 50 }}
@@ -120,8 +120,8 @@ const Expertise = () => {
               Become a Partner &{" "}
               <span className="text-custom-success">Earn</span> Rewards
             </h2>
-            <p className="fw-semibold fst-italic">Join & Earn Big!</p>
-            <p>
+            <p className="fw-semibold fst-italic d-md-block d-none">Join & Earn Big!</p>
+            <p className="d-md-block d-none">
               Get hefty cash rewards & free meals—
               <span className="text-custom-success fw-bold">
                 No investment, Just referrals!
@@ -135,7 +135,8 @@ const Expertise = () => {
               <br />
               Don’t miss this easy money-making opportunity!
             </p>
-            <button className="btn partner-rewards-btn btn-custom-success rounded-pill text-white" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
+            <p className="d-md-none partner-content">Join our partnership program and EARN FREE MEALS and real money by referring others. Contribute to a healthier community while gaining financial benefits.</p>
+            <button className="btn partner-rewards-btn btn-custom-success rounded-pill text-white d-md-block d-none" style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
               Download the app & start earning today!
             </button>
           </div>
@@ -154,16 +155,16 @@ const Expertise = () => {
 
       <div style={{ backgroundColor: "#F8F9F8" }}>
         <motion.div
-          className="why-choose-tcd container py-5"
+          className="why-choose-tcd container py-md-5 py-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           {/* <section className="why-choose-tcd container py-5"> */}
-          <div className="row align-items-center">
+          <div className="row align-items-center justify-content-center">
             {/* Left Content */}
-            <div className="col-md-8 d-flex align-items-center" style={{gap: "56px"}}>    
+            <div className="col-lg-8 col-12 d-flex align-items-center" style={{gap: "56px"}}>    
               <div>
                 <h2 className="heading" style={{ fontSize: "50px", fontWeight:"700" }}>
                   Why Choose TCD as a <br></br> Lifetime
@@ -172,36 +173,14 @@ const Expertise = () => {
                 <ul className="list-unstyled para1" style={{ marginTop: "35px" }}>
                   {features.map((feature, index) => (
                     <li key={index} className="d-flex align-items-center">
-                      <svg
-                        className="checkmark-circle me-2"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke=""
-                          strokeWidth="3"
-                          fill=""
-                        />
-                        <path
-                          d="M7 12.5L10 16L17 8"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                     <i class="fa-solid fa-circle-check"></i>
                       <span className="ms-3">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <img
+              <img 
+              className="d-md-block d-none"
                 src={TCDLOGO}
                 alt="tcd logo"
                 style={{
@@ -212,12 +191,12 @@ const Expertise = () => {
             </div>
 
             {/* Right Image */}
-            <div className="col-md-4 text-center">
+            <div className="col-lg-4 col-md-8 text-center mt-lg-0 mt-4">
               <img
                 src={mealPlan}
                 alt="Meal Plan"
                 className="img-fluid"
-                style={{ width: "100%", height: "574px", objectFit:"cover" }}
+                style={{ width: "100%",}}
               />
             </div>
           </div>

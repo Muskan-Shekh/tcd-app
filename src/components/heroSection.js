@@ -10,7 +10,7 @@ const HeroSection = () => {
     return (
         <>
             <motion.div
-                className="bg-white container d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-between py-5"
+                className="bg-white container d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-between py-5 hero-sec"
                 style={{ marginTop: "150px" }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -18,16 +18,21 @@ const HeroSection = () => {
                 viewport={{ once: true }}
             >
                 {/* <section className="bg-white container d-flex flex-column flex-md-row align-items-center justify-content-between py-5" style={{width:"1518px", height:"659px", marginTop:"4rem"}}> */}
-                <div className="col-lg-5 col-md-6">
-                    <h1 className="display-4 fw-bold heading">
+                <div className="col-lg-5 col-md-6 col-12">
+                    <h1 className="display-4 fw-bold heading main-heading">
                         Customizable <br></br>{" "}
                         <span className="text-custom-success">Healthy</span> Meals <br></br>Delivered
                         to <span className="text-custom-success">You!</span>
                     </h1>
-                    <p className="text-custom-muted mt-3">
+                    <p className="text-custom-muted mt-3 banner-text">
                         No packed food with preservatives is better <br></br> than a daily
                         freshly cooked meal by TCD.
                     </p>
+                    <button
+                        className="btn btn-custom-success text-white rounded-pill border-0 d-md-none d-block mx-auto" style={{ fontWeight: "600", padding: "18px 32px", transition: "all 500ms ease 0ms" }}
+                    >
+                        Get the App
+                    </button>
                 </div>
                 <div className="position-relative col-lg-5 col-md-6 text-center">
                     {/* Background Image */}
@@ -73,7 +78,7 @@ const HeroSection = () => {
                 </div>
 
                 <motion.div
-                    className="col-lg-2 col-12 d-flex flex-lg-column flex-row align-items-start justify-content-md-end mt-lg-0 mt-3 "
+                    className="col-lg-2 col-12 d-flex flex-lg-column flex-row align-items-start justify-content-md-end justify-content-center mt-lg-0 mt-3 "
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -90,7 +95,7 @@ const HeroSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center flex-wrap justify-content-end">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
