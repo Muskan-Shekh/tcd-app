@@ -17,8 +17,8 @@
   font-family: 'Poppins', sans-serif;
 }
 /* Header Css */
-nav .active{
-  color: #6ec207;
+.active {
+  color: #6ec207 !important;
 }
 nav a:hover{
   color: #6ec207 !important;
