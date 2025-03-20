@@ -109,6 +109,9 @@ h1 span, h2 span{
   margin-top: 4rem;
   z-index: 1;
 }
+.logo-content{
+  overflow: hidden;
+}
 
 .bg-leaf {
   width: 99.87px;
@@ -265,7 +268,7 @@ i.fa-solid.fa-circle-check {
   background: white;
   position: relative;
 }
-.blog-card img{
+.blog-card .blog-card-img img{
   border-radius: 28px; 
 }
 .blog-card-img{
@@ -289,9 +292,16 @@ i.fa-solid.fa-circle-check {
   border-radius: 50px !important;
   position: absolute;
   bottom: 20px;
+  text-decoration: none;
   left: 15px;
   font-weight: 600 !important;
+  transition: 500ms;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.blog-badge:hover {
+  background-color: #6ec207;
+  color: #fff !important; 
 }
 
 .blog-description {
@@ -306,6 +316,11 @@ i.fa-solid.fa-circle-check {
     color: #117554;
     margin-top: 10px;
     text-align: left;
+    text-decoration: none;
+    transition: 500ms;
+}
+.blog-doctor:hover {  
+    color: #6ec207;    
 }
 
 
@@ -482,6 +497,21 @@ button:focus:not(:focus-visible) {
 }
 button:focus:not(:focus-visible) {
   outline: 0;
+}
+
+/* Our Meals Psge css*/
+
+.our_meals_btn{
+  background-color: rgb(246, 248, 250);
+  color: rgb(129, 136, 152);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  white-space: nowrap;
+  width: 164px;
+  height: 50px;
+  justify-content: center;
+  border: 1px solid rgb(223, 225, 231);
 }
 
 @media (max-width: 991px) {

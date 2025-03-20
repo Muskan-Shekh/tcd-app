@@ -70,9 +70,10 @@ const OurMeals = () => {
           backgroundImage: `url(${ourMealsImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          padding: "100px 0",
-          marginTop: "80px",
+          padding: "120px 0 100px 0",
+          marginTop: "65px",
         }}
+      
       >
         <div
           style={{
@@ -81,7 +82,7 @@ const OurMeals = () => {
             left: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
             zIndex: 0, // Adjust opacity as needed
           }}
         ></div>
@@ -119,55 +120,35 @@ const OurMeals = () => {
                     </Card.Text>
                     <p className="blog-price-meal">{blog.price}</p>
                     <div
-                      className="d-flex justify-content-between flex-wrap"
-                      style={{ marginBottom: "50px", gap: "10px" }}
+                      className="d-flex flex-wrap"
+                      style={{ marginBottom: "30px", gap: "20px" }}
                     >
                       <button
-                        className="d-flex align-items-center text-decoration-none px-3"
-                        style={{
-                          backgroundColor: "#F6F8FA",
-                          color: "#818898",
-                          fontSize: "14px",
-                          fontWeight: "500",
-                          borderRadius: "10px",
-                          whiteSpace: "nowrap",
-                          padding: "14px 12px",
-                          border: "1px solid #DFE1E7",
-                        }}
+                        className="d-flex align-items-center text-decoration-none our_meals_btn"                        
                       >
                         {" "}
                         <img
                           src={cardMealVector}
                           alt="vector"
                           style={{
-                            width: "20px", // Same size for icon
-                            height: "20px", // Same size for icon
-                            marginRight: "8px",
+                            width: "12px", // Same size for icon
+                            height: "12px", // Same size for icon
+                            marginRight: "6px",
                           }}
                         />{" "}
                         Select No. of Days
                       </button>
                       <button
-                        className="d-flex  align-items-center text-decoration-none px-3"
-                        style={{
-                          backgroundColor: "#F6F8FA",
-                          color: "#818898",
-                          fontSize: "14px",
-                          fontWeight: "500",
-                          borderRadius: "10px",
-                          whiteSpace: "nowrap",
-                          padding: "14px 12px",
-                          border: "1px solid #DFE1E7",
-                        }}
+                        className="d-flex  align-items-center text-decoration-none our_meals_btn"                       
                       >
                         {" "}
                         <img
                           src={cardMealVector}
                           alt="vector"
                           style={{
-                            width: "20px", // Same size for icon
-                            height: "20px", // Same size for icon
-                            marginRight: "8px",
+                            width: "12px", // Same size for icon
+                            height: "12px", // Same size for icon
+                            marginRight: "6px",
                           }}
                         />{" "}
                         Select No. of Meals
@@ -219,7 +200,7 @@ const OurMeals = () => {
                   Prime Membership Exclusive access to premium health <br></br>{" "}
                   awareness videos and expert guidance and free consultations.
                 </p>
-                <div className="d-flex gap-3">
+                <div className="d-flex gap-3 justify-content-lg-start justify-content-center">
                   <a href="https://play.google.com/" className="no-style-link">
                     <img
                       src={googlePlay}

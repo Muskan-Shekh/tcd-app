@@ -14,7 +14,7 @@ import avatar1 from "../assets/avatar1.png";
 import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar3.png";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const blogs = [
   {
     title: "Heart Health",
@@ -86,14 +86,17 @@ const BlogSection = () => {
                     variant="top"
                     src={blog.image}
                   />
-                    <span className="badge blog-badge">{blog.title}</span></div>
-                  
+                    
+                    <Link to="/" className="badge blog-badge">{blog.title}</Link>
+                    
+                    </div>
+            
 
                   <Card.Body className="p-0">
                     <Card.Text className="blog-description">
                       {blog.description}
                     </Card.Text>
-                    <p className="blog-doctor">{blog.doctor}</p>
+                   <Link to="/" className="blog-doctor">{blog.doctor}</Link> 
                   </Card.Body>
                 </Card>
               </motion.div>            
