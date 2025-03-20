@@ -100,7 +100,7 @@ const Header = () => {
                             </svg>
                         </Link>
                         <Link
-                            to="/"
+                            to="/about-us"
                             className={`text-decoration-none ${activeLink === "/about-us" ? "active" : "text-white"
                                 }`}
                             style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}
@@ -109,7 +109,7 @@ const Header = () => {
                             About Us
                         </Link>
                         <Link
-                            to="/"
+                            to="/blog"
                             className={`text-decoration-none ${activeLink === "/blogs" ? "active" : "text-white"
                                 }`}
                             style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}

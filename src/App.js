@@ -9,6 +9,8 @@ import HeroSection from "./components/heroSection.js";
 import OurMeals from "./pages/OurMeals.js";
 import AboutUs from "./pages/AboutUs.js";
 import TermsAndCondition from "./pages/TermsAndCondition.js";
+import Blog from "./pages/Blog.js";
+import BlogDetails from "./pages/BlogDetails.js";
 
 const App = () => {
   return (
@@ -60,6 +62,28 @@ const App = () => {
           <>
           <Layout>
             <TermsAndCondition />
+          </Layout>
+          </>
+        }
+        />
+        {/* Blog */}
+        <Route
+        path="Blog"
+        element={
+          <>
+          <Layout>
+            <Blog />
+          </Layout>
+          </>
+        }
+        />
+         {/* BlogDetails */}
+         <Route
+        path="BlogDetails"
+        element={
+          <>
+          <Layout>
+            <BlogDetails/>
           </Layout>
           </>
         }
