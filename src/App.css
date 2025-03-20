@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+h1, h2{
+  font-family: "PT Serif";
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,3 +45,5 @@
     transform: rotate(360deg);
   }
 }
+
+

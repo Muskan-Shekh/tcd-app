@@ -120,6 +120,7 @@ const AboutSection = () => {
           </div>
         </div>
       </motion.div>
+      
       <motion.div
         className="container my-9 our-mission-sec"
         style={{marginTop:"4.5rem",marginBottom:"4.5rem"}}

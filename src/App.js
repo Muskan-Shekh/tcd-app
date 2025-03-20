@@ -7,6 +7,7 @@ import BlogSection from "./components/blogSection.js";
 import Layout from "./components/layout.js";
 import HeroSection from "./components/heroSection.js";
 import OurMeals from "./pages/OurMeals.js";
+import AboutUs from "./pages/AboutUs.js";
 
 const App = () => {
   return (
@@ -37,6 +38,18 @@ const App = () => {
               </Layout>
             </>
           }
+        />
+
+        {/* about-us */}
+        <Route
+        path="/about-us"
+        element={
+          <>
+          <Layout>
+            <AboutUs />
+          </Layout>
+          </>
+        }
         />
       </Routes>
     </Router>
