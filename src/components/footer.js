@@ -74,11 +74,11 @@ const Footer = () => {
                             <div className="footer-menu">
                                 <h6 className="text-light" style={{ fontSize: "18px", fontWeight: "600" }}>Feature</h6>
                                 <ul className="list-unstyled" style={{ marginTop: "20px" }}>
-                                    <li><a href="#" className="no-style-link">Home</a></li>
-                                    <li style={{ paddingTop: "26px" }}><a href="#" className="no-style-link">Our Menu</a></li>
-                                    <li style={{ paddingTop: "26px" }}><a href="#" className="no-style-link">About Us</a></li>
-                                    <li style={{ paddingTop: "26px" }}><a href="#" className="no-style-link">Blogs</a></li>
-                                    <li style={{ paddingTop: "26px" }}><a href="#" className="no-style-link">Contact Us</a></li>
+                                    <li><Link to="/" className="no-style-link">Home</Link></li>
+                                    <li style={{ paddingTop: "26px" }}><Link to="/" className="no-style-link">Our Menu</Link></li>
+                                    <li style={{ paddingTop: "26px" }}><Link to="/about-us" className="no-style-link">About us</Link></li>
+                                    <li style={{ paddingTop: "26px" }}><Link to="/blogs" className="no-style-link">Blogs</Link></li>
+                                    <li style={{ paddingTop: "26px" }}><Link to="/contact-us" className="no-style-link">Contact us</Link></li>
                                 </ul>
                             </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                                         fill="#69CD01"
                                     />
                                 </svg>
-                                <a href="tel:+91704547272" className="no-style-link" >{"  +91 704547272"}</a>
+                                <Link to="tel:+91704547272" className="no-style-link" >{"  +91 704547272"}</Link>
                             </p>
 
                             <p style={{ paddingTop: "26px" }}>
@@ -122,7 +122,7 @@ const Footer = () => {
                                         fill="#69CD01"
                                     />
                                 </svg>
-                                <a href="mailto:info@thecorrectdiet.com" className="no-style-link" >{"  info@thecorrectdiet.com"}</a>
+                                <Link to="mailto:info@thecorrectdiet.com" className="no-style-link" >{"  info@thecorrectdiet.com"}</Link>
                             </p>
 
                             <address style={{ paddingTop: "26px", cursor: "pointer" }} className="no-style-link">
@@ -152,30 +152,30 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 mt-lg-0 mt-md-4 mt-5">
                             <h6 className="text-light" style={{ fontSize: "18px", fontWeight: "600" }}>Follow Us on Social Media</h6>
                             <div className="d-flex gap-3" style={{ marginTop: "20px" }}>
-                                <a href="https://x.com/" className="no-style-link" >
+                                <Link to="https://x.com/" className="no-style-link" >
                                     <i
                                         className="bi bi-twitter"
                                         style={{ fontSize: "30px", marginRight: "0.6rem" }}
                                     ></i>
-                                </a>
-                                <a href="https://linked.com/" className="no-style-link" >
+                                </Link>
+                                <Link to="https://linked.com/" className="no-style-link" >
                                     <i
                                         className="bi bi-linkedin"
                                         style={{ fontSize: "30px", marginRight: "0.6rem" }}
                                     ></i>
-                                </a>
-                                <a href="https://www.instagram.com/" className="no-style-link" >
+                                </Link>
+                                <Link to="https://www.instagram.com/" className="no-style-link" >
                                     <i
                                         className="bi bi-instagram"
                                         style={{ fontSize: "30px", marginRight: "0.6rem" }}
                                     ></i>
-                                </a>
-                                <a href="https://www.youtube.com/" className="no-style-link" >
+                                </Link>
+                                <Link to="https://www.youtube.com/" className="no-style-link" >
                                     <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
-                                </a>
+                                </Link>
                             </div>
                             <div style={{ paddingTop: "26px" }}>
-                                <a href="https://play.google.com/" className="no-style-link" >
+                                <Link to="https://play.google.com/" className="no-style-link" >
                                     <img
                                         src={googlePlay}
                                         alt="Google Play"
@@ -183,10 +183,10 @@ const Footer = () => {
                                         className="me-2"
                                         style={{ display: "block", height: "59px" }}
                                     />
-                                </a>
-                                <a href="https://www.apple.com/in/app-store/" className="no-style-link" >
+                                </Link>
+                                <Link to="https://www.apple.com/in/app-store/" className="no-style-link" >
                                     <img src={appStore} alt="App Store" width="203" style={{ display: "block", height: "59px", marginTop: "23px" }} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -197,12 +197,12 @@ const Footer = () => {
             <div className="footer-bottom d-md-flex flex-md-row py-3 container">
 
                 <p className="d-md-block d-none" style={{ color: "#9D9D9D" }}>
-                    <span> <Link to="/" className="no-style-link" >Privacy Policy</Link> </span> |
+                    <span> <Link to="/privacy-policy" className="no-style-link" >Privacy Policy</Link> </span> |
                     <span> <Link to="/terms-and-conditions" className="no-style-link" >Terms and Conditions</Link></span>
                 </p>
                 <p className="copy-right-text" style={{ marginLeft: "14rem" }}>
                     © 2025{" "}
-                    <span className="text-custom-success">The Correct Diet (TCD)</span>{" "}
+                    <Link to="/" className="text-custom-success" style={{textDecoration:"none"}}>The Correct Diet (TCD)</Link>{" "}
                     | All Rights Reserved
                 </p>
             </div>

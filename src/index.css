@@ -60,7 +60,7 @@
   font-weight: 500;
   transition: 500ms;
 }
-.desktop_header nav .dropdown ul li a:hover{
+.desktop_header nav .dropdown ul li a:hover, .mobile_header nav .dropdown ul li a:hover{
   background:none;
 }
 
@@ -968,6 +968,10 @@ h2{
 }
 .our-mission-content .our-mission-text {
   margin-bottom: 25px !important;
+}
+.blog-card .blog-card-img img{
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Blog Post details Css */

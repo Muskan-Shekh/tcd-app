@@ -61,7 +61,7 @@ const Expertise = () => {
           </div>
           {/* Content */}
         <div className="content-container d-flex align-items-center flex-wrap">
-          <div className="col-md-5 col-12 text-md-left text-center">
+          <div className="col-md-5 col-12 text-md-left text-md-start text-center">
             <h2 className="fw-bold heading">
               Expertise in <br></br>providing{" "}
               <span className="text-custom-success">diet for</span>
