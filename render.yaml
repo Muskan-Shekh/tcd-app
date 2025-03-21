@@ -1,0 +1,6 @@
+static:
+  buildCommand: npm run build
+  publishDirectory: build
+  routes:
+    - src: /.*  # Any route
+      dest: /index.html  # Serve the index.html
