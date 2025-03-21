@@ -68,7 +68,7 @@ const App = () => {
         />
         {/* Blog */}
         <Route
-        path="Blog"
+        path="Blogs"
         element={
           <>
           <Layout>
@@ -79,7 +79,7 @@ const App = () => {
         />
          {/* BlogDetails */}
          <Route
-        path="BlogDetails"
+        path="blog-details"
         element={
           <>
           <Layout>

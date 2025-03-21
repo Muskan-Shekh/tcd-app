@@ -109,7 +109,7 @@ const Header = () => {
                             About Us
                         </Link>
                         <Link
-                            to="/blog"
+                            to="/blogs"
                             className={`text-decoration-none ${activeLink === "/blogs" ? "active" : "text-white"
                                 }`}
                             style={{ fontWeight: "500", transition: "all 500ms ease 0ms" }}
