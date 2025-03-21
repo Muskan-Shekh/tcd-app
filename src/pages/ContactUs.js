@@ -1,106 +1,97 @@
 import React from "react";
-import "../App.css";
-import aboutUsImage from "../assets/about_us_bg_img.jpg";
-import correctDietImg from "../assets/correct-diet-img.jpg";
-import missionImage from "../assets/missionImage.svg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import ContactUsImage from "../assets/contact-us-bg-img.jpg";
+import ContactFormImage from "../assets/contact-form-img.png";
 import mobileMockup from "../assets/mobile.png";
 import mobileMockup1 from "../assets/mobile2.png";
 import googlePlay from "../assets/googlePlay.png";
 import appStore from "../assets/appStore.png";
+
 import { Button } from "react-bootstrap";
-import { Row, Col, } from "react-bootstrap";
-import avatar1 from "../assets/avatar1.png";
-import avatar2 from "../assets/avatar2.png";
-import avatar3 from "../assets/avatar3.png";
 
-const AboutUs = () => {
-  return (
-    <div>
-      <div
-        className="banner d-flex justify-content-center align-items-center"
-        style={{
-          backgroundImage: `url(${aboutUsImage})`,
-        }}
-      >
-        <div className="overlay-banner"></div>
-        <h1 className="text-white position-relative">
-          About <span>Us</span>
-        </h1>
-      </div>
+const ContactUs = () => {
+    return (
+        <div>
 
-      {/* correct diet section */}
-      <div className="container">
-        <div class="row align-items-center about-us-content" style={{ marginBottom: "120px" }}>
-          <div class="correct-diet-img col-md-6">
-            <img src={correctDietImg} alt="dietImage" className="img-fluid" />
-          </div>
-          <div class="correct-diet col-md-6 mt-md-0 mt-5">
-            <h2 className="text-black text-md-start text-center">
-              Welcome to the <br />
-              <span>The Correct Diet</span>
-            </h2>
-
-            <div className="correct-diet-p ">
-              <p className="p1 text-md-start text-center">
-                At TCD, we're all about taking your taste buds on an adventure
-                while keeping your body fuelled with the best ingredients
-                possible
-              </p>
-              <p className=" text-md-start text-center">
-                The Correct Diet (TCD) provides customized, freshly cooked daily
-                meals and ready-to-eat healthy food and drinks. We deliver to
-                nearby gyms, supporting individuals in achieving their fitness
-                goals and managing various medical conditions through proper
-                nutrition.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* our mission */}
-      <div className="our-mission-content">
-      <motion.div
-              className="container my-9 our-mission-sec"
-             
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+            <div
+                className="banner"
+                style={{
+                    backgroundImage: `url(${ContactUsImage})`,
+                }}
             >
-              {/* <div className="container my-5"> */}
-              <div className="row align-items-center">
-                {/* Left Side Text */}
-                <div className="col-md-6">
-                  <h2 className="fw-bold heading text-md-start text-center">
-                    Our <span className="text-custom-success">Mission</span>
-                  </h2>
-                  <p className=" our-mission-text text-md-start text-center">
-                  To promote a preventive and sustainable approach to nutrition and wellness, ensuring a healthier and longer life for all individuals.
-                  </p>
-                  <p className="text-md-start text-center">
-                  The Correct Diet (TCD) provides customized, freshly cooked daily meals and ready-to-eat healthy food and drinks. We deliver to nearby gyms, supporting individuals in achieving their fitness goals and managing various medical conditions through proper nutrition.
-                  </p>
+                <div className="overlay-banner"></div>
+                <h1 className="text-white position-relative text-center">
+                    Contact<span>Us</span>
+                </h1>
+            </div>
+            <motion.div
+
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+            >
+                <div className="container contact_us_content">
+                    <Row>
+
+                        <Col md={6}>
+                            <div className="contact_details">
+                                <h2>Get in touch with us</h2>
+                                <div className="contact_top_bar d-flex flex-lg-nowrap flex-wrap gap-lg-0 gap-4 justify-content-md-start justify-content-center">
+                                    <div className="contact_top_bar_img">
+                                        <img
+                                            src={ContactFormImage}
+                                            alt="vector"
+                                        />
+                                    </div>
+                                    <div className="contact_top_bar_content">
+                                        <p>Hi, I’m Shilpa. Need help? Use the form below or email me at hello@thecorrectdiet.com</p>
+                                    </div>
+                                </div>
+                                <div className="contact_form">
+                                    <form>
+                                        <div className="form-group">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Girish Santlani" />
+                                        </div>
+                                    </form>
+                                    <form>
+                                        <div className="form-group">
+                                            <label>Email</label>
+                                            <input type="text" placeholder="Girish Santlani@gmail.com" />
+                                        </div>
+                                    </form>
+                                    <form>
+                                        <div className="form-group">
+                                            <label>Message</label>
+                                            <input type="text" placeholder="Girish Type your query here....." />
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="form-group">
+                                                <input class="form-control submit_btn" type="submit" value="Send Message" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div className="contact_social">
+                                        <Link><i class="fa-brands fa-twitter"></i></Link>
+                                        <Link><i class="fa-brands fa-linkedin"></i></Link>
+                                        <Link><i class="fa-brands fa-instagram"></i></Link>
+                                        <Link><i class="fa-brands fa-youtube"></i></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={6} className="contact_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.0378580217753!2d75.82657850498249!3d26.894975683559043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db694f654eb23%3A0xd9e06efd585f1f2f!2s357%2F2%2C%20Raja%20Park%2C%20Jaipur%2C%20Rajasthan%20302004!5e0!3m2!1sen!2sin!4v1742538236644!5m2!1sen!2sin" width="100%" height="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="custom_map"></iframe>
+                        </Col>
+                    </Row>
                 </div>
-      
-                {/* Right Side Image */}
-                <div className="col-md-6 text-center">
-                  <img
-                    src={missionImage}
-                    alt="Mission"
-                    className="img-fluid"
-                    style={{ width: "400px"}}
-                  />
-                </div>
-              </div>
             </motion.div>
-      </div>
-
-      {/* download our mobile app */}
-
-        <motion.div
-              className="app-download-section container"
+            <motion.div
+              className="app-download-section container "
+              style={{marginBottom:"100px"}}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -360,84 +351,11 @@ const AboutUs = () => {
                 </Row>        
             </motion.div>
 
-            {/* need help */}
-              <motion.div
-                    className="text-center py-6"
-                    style={{ marginTop: "6rem", marginBottom: "6rem" }}
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                  >
-                    {/* <section className="text-center py-5 mb-6"> */}
-                    <h2 className="fw-bold heading">
-                      Need <span className="text-custom-success">Help?</span>
-                    </h2>
-                    <p className="fw-semibold text-[#3F3F3F]" style={{ fontSize: "26px" }}>
-                      Talk to our Dietitian!
-                    </p>
-                    <p className="text-muted mx-auto w-md-50 para1" style={{ marginTop:"20px", marginBottom:"30px" }}>
-                      Don’t know where to start or have any specific health conditions?
-                      Consult our experienced Dietitian and get your meals customised
-                      accordingly!
-                    </p>
-            
-                    {/* Profile Avatars */}
-                    <div className="d-flex justify-content-center mt-3">
-                      <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                      >
-                        <img
-                          src={avatar1}
-                          alt="Avatar 1"
-                          className="rounded-circle mx-2 border border-white shadow-sm"
-                          width="72"
-                          height="72"
-                        />
-                      </motion.div>
-                      <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                      >
-                        <img
-                          src={avatar2}
-                          alt="Avatar 2"
-                          className="rounded-circle border border-white shadow-sm"
-                          width="72"
-                          height="72"
-                          style={{ marginLeft: "-1.5rem" }}
-                        />
-                      </motion.div>
-                      <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                      >
-                        <img
-                          src={avatar3}
-                          alt="Avatar 3"
-                          className="rounded-circle border border-white shadow-sm"
-                          width="72"
-                          height="72"
-                          style={{ marginLeft: "-1.5rem" }}
-                        />
-                      </motion.div>
-                    </div>
-            
-                    {/* Contact Button */}
-                    <Button className="mt-4  rounded-pill shadow-sm btn-custom-success need-help-btn " style={{fontWeight:"600", padding:"18px 32px", transition:"all 500ms ease 0ms"}}>
-                      Contact Now
-                    </Button>
-                  </motion.div>
+          
 
-    </div>
-  );
+        </div>
+
+    );
 };
 
-export default AboutUs;
+export default ContactUs;

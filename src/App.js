@@ -11,6 +11,8 @@ import AboutUs from "./pages/AboutUs.js";
 import TermsAndCondition from "./pages/TermsAndCondition.js";
 import Blog from "./pages/Blog.js";
 import BlogDetails from "./pages/BlogDetails.js";
+import ContactUs from "./pages/ContactUs.js";
+import PrivacyPolicy from "./pages/PrivacyPolicy.js";
 
 const App = () => {
   return (
@@ -84,6 +86,28 @@ const App = () => {
           <>
           <Layout>
             <BlogDetails/>
+          </Layout>
+          </>
+        }
+        />
+         {/* ContactUs */}
+         <Route
+        path="contact-us"
+        element={
+          <>
+          <Layout>
+         <ContactUs/>
+          </Layout>
+          </>
+        }
+        />
+         {/* Privacy Policy */}
+         <Route
+        path="privacy-policy"
+        element={
+          <>
+          <Layout>
+         <PrivacyPolicy/>
           </Layout>
           </>
         }
