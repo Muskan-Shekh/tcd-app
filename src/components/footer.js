@@ -2,6 +2,8 @@ import googlePlay from "../assets/googlePlay.png";
 import appStore from "../assets/appStore.png";
 import { motion } from "framer-motion";
 import slice from "../assets/Slice 1.svg";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -195,8 +197,8 @@ const Footer = () => {
             <div className="footer-bottom d-md-flex flex-md-row py-3 container">
 
                 <p className="d-md-block d-none" style={{ color: "#9D9D9D" }}>
-                    <span> <a href="/" className="no-style-link" >Privacy Policy</a> </span> |
-                    <span> <a href="/terms-and-conditions" className="no-style-link" >Terms and Conditions</a></span>
+                    <span> <Link to="/" className="no-style-link" >Privacy Policy</Link> </span> |
+                    <span> <Link to="/terms-and-conditions" className="no-style-link" >Terms and Conditions</Link></span>
                 </p>
                 <p className="copy-right-text" style={{ marginLeft: "14rem" }}>
                     © 2025{" "}
